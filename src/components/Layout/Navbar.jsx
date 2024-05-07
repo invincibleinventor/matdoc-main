@@ -103,7 +103,7 @@ const Navbar = () => {
               src={Assets.MatDoc}
               alt="Mat Doc"
               title="Mat Doc"
-              className="max-w-[110px] md:max-w-[190px] md:max-h-20 relative z-50 w-fit object-contain bg-blend-overlay cursor-pointer hover:scale-95  duration-500 ease-in-out"
+              className="max-w-[110px] md:max-w-[170px] md:max-h-20 relative z-50 w-fit object-contain bg-blend-overlay cursor-pointer hover:scale-95  duration-500 ease-in-out"
             />
           </Link>
         </div>
@@ -151,7 +151,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="w-[14%] flex justify-end items-center ">
+        <div className="w-[17%] flex justify-end items-center ">
           <ul className="items-center justify-end hidden ml-4 lg:flex">
             <li className="flex items-center justify-center px-5 py-2 bg-white rounded cursor-pointer text-primary-black">
               Sign in / Sign up
