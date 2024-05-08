@@ -33,13 +33,15 @@ const Navbar = () => {
       subMenu: [
         {
           id: 1,
-          name: "AC Charger",
-          link: "#",
+          name: "Under Graduate",
+          para: " IN 30 STATES & ALL INDIA COUNSELLING ",
+          link: "/neet-ug",
         },
         {
           id: 2,
-          name: "DC Charger",
-          link: "#",
+          name: "Post Graduate",
+          para: " IN 30 STATES & ALL INDIA COUNSELLING ",
+          link: "/neet-pg",
         },
       ],
     },
@@ -49,12 +51,22 @@ const Navbar = () => {
       subMenu: [
         {
           id: 1,
-          name: "AC Charger",
+          name: "NEET Counselling Process",
           link: "#",
         },
         {
           id: 2,
-          name: "DC Charger",
+          name: "Top Colleges for Neet",
+          link: "#",
+        },
+        {
+          id: 3,
+          name: "NEET UG Counselling Date",
+          link: "#",
+        },
+        {
+          id: 4,
+          name: "NEET cut-off",
           link: "#",
         },
       ],
@@ -72,23 +84,22 @@ const Navbar = () => {
     {
       id: 6,
       name: "Contact Us",
-      link: "#",
+      link: "/contact-us",
     },
     {
       id: 7,
       name: "Enquire Now",
-      link: "#",
+      link: "/enquiry-form",
     },
   ];
 
-
-   const toggleSubmenu = (menuId) => {
-     setOpenSubmenus((prev) =>
-       prev.includes(menuId)
-         ? prev.filter((id) => id !== menuId)
-         : [...prev, menuId]
-     );
-   };
+  const toggleSubmenu = (menuId) => {
+    setOpenSubmenus((prev) =>
+      prev.includes(menuId)
+        ? prev.filter((id) => id !== menuId)
+        : [...prev, menuId]
+    );
+  };
 
   return (
     <section
@@ -110,13 +121,10 @@ const Navbar = () => {
         <div className="w-[62%] flex justify-center items-center ">
           <ul className="items-center justify-center hidden lg:flex gap-x-4 xl:gap-x-7">
             {menuBar.map((menu) => (
-              <li
-                className="relative text-base text-white duration-500 ease-in-out hover:scale-105"
-                key={menu.id}
-              >
+              <li className="relative text-base text-white " key={menu.id}>
                 <Link
                   to={menu.link}
-                  className="flex items-center justify-start text-xl font-medium xl:text-lg "
+                  className="flex items-center justify-start text-xl font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
                   rel="canonical"
                   onClick={() => toggleSubmenu(menu.id)}
                 >
@@ -133,20 +141,26 @@ const Navbar = () => {
                     />
                   )}
                 </Link>
-                {/* {menu.subMenu && openSubmenus.includes(menu.id) && (
-                  <ul className="absolute left-0 py-2 text-black bg-white rounded shadow-lg top-full">
+                {menu.subMenu && openSubmenus.includes(menu.id) && (
+                  <ul className="absolute min-w-[420px] left-1/2 -translate-x-1/2  text-white bg-black border-2 rounded shadow-lg border-secondary-sky top-12 py-5 px-5">
                     {menu.subMenu.map((subItem) => (
-                      <li key={subItem.id}>
+                      <li
+                        key={subItem.id}
+                        onClick={() => toggleSubmenu(menu.id)}
+                      >
                         <Link
                           to={subItem.link}
-                          className="block px-4 py-2 hover:bg-gray-200"
+                          className="block px-8 py-5 rounded hover:bg-slate-800"
                         >
-                          {subItem.name}
+                          <h3 className="text-2xl"> {subItem.name}</h3>
+                          {subItem?.para && (
+                            <p className="mt-1 text-base">{subItem?.para}</p>
+                          )}
                         </Link>
                       </li>
                     ))}
                   </ul>
-                )} */}
+                )}
               </li>
             ))}
           </ul>

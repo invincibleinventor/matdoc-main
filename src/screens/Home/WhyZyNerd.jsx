@@ -41,13 +41,13 @@ const WhyZyNerd = () => {
     <section className="w-full py-20 bg-black ">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
         <p className="text-sm text-center text-white" data-aos="fade-up">
-          THE ZyNerd ADVANTAGE
+          THE MAT DOC ADVANTAGE
         </p>
         <h2 className="mt-1 mb-5 text-center text-white" data-aos="fade-up">
-          Why ZyNerd?
+          Why MAT DOC?
         </h2>
         <p className="text-xl text-center text-white" data-aos="fade-up">
-          {` Here's why ZyNerd is your ideal companion in your medical career
+          {` Here's why MAT DOC is your ideal companion in your medical career
           journey.`}
         </p>
         <div

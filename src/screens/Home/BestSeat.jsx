@@ -2,7 +2,7 @@ import { CircleCheck, MoveRight } from "lucide-react";
 
 const BestSeat = () => {
   return (
-    <section className="w-full  pt-32 pb-20 ">
+    <section className="w-full pt-32 pb-20 ">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
         <p className="text-sm text-center text-white" data-aos="fade-up">
           THE NEW WAY OF COUNSELLING
@@ -20,7 +20,7 @@ const BestSeat = () => {
           &amp; Certificates required, Fee, Stipend &amp; Bond, Seats &amp; Bed
           Information for all colleges and much more!
         </p>
-        <div className="flex justify-between mt-14 w-full">
+        <div className="flex justify-between w-full mt-14">
           <div
             className="w-[48%] border border-secondary-sky shadow-reverse rounded p-10"
             data-aos="fade-right"
@@ -30,29 +30,29 @@ const BestSeat = () => {
               <h3 className="text-3xl font-semibold"> UG</h3>
             </div>
             <h2 className="mt-8 text-white ">Under Graduate</h2>
-            <p className="mt-2 text-white text-base">
+            <p className="mt-2 text-base text-white">
               IN ALL 30 STATES & ALL INDIA COUNSELLING
             </p>
-            <p className="mt-6 text-white text-lg">
+            <p className="mt-6 text-lg text-white">
               Simplifying complex information, empowering you to make informed
               decisions for your child's future.
             </p>
-            <div className="border rounded my-8 border-secondary-sky p-6">
-              <ul className="text-white text-xl">
-                <li className="first:mt-0 mt-4 flex justify-start items-center">
-                  <span className="text-primary-green mr-4">
+            <div className="p-6 my-8 border rounded border-secondary-sky">
+              <ul className="text-xl text-white">
+                <li className="flex items-center justify-start mt-4 first:mt-0">
+                  <span className="mr-4 text-primary-green">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Clarity on options
                 </li>
-                <li className="first:mt-0 mt-4 flex justify-start items-center">
-                  <span className="text-primary-green mr-4">
+                <li className="flex items-center justify-start mt-4 first:mt-0">
+                  <span className="mr-4 text-primary-green">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Future Proofing
                 </li>
-                <li className="first:mt-0 mt-4 flex justify-start items-center">
-                  <span className="text-primary-green mr-4">
+                <li className="flex items-center justify-start mt-4 first:mt-0">
+                  <span className="mr-4 text-primary-green">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Financial Confidence
@@ -65,7 +65,7 @@ const BestSeat = () => {
             >
               Learn More
               <MoveRight
-                className="text-primary-green text-base ml-3"
+                className="ml-3 text-base text-primary-green"
                 size={28}
               />
             </button>
@@ -78,29 +78,29 @@ const BestSeat = () => {
               <h3 className="text-3xl font-semibold"> PG</h3>
             </div>
             <h2 className="mt-8 text-white ">Under Graduate</h2>
-            <p className="mt-2 text-white text-base">
+            <p className="mt-2 text-base text-white">
               IN ALL 30 STATES & ALL INDIA COUNSELLING
             </p>
-            <p className="mt-6 text-white text-lg">
-              ZyNerd is the perfect companion to help you take your medical
+            <p className="mt-6 text-lg text-white">
+              MAT DOC is the perfect companion to help you take your medical
               career to the next level.
             </p>
-            <div className="border rounded my-8 border-secondary-sky p-6">
-              <ul className="text-white text-xl">
-                <li className="first:mt-0 mt-4 flex justify-start items-center">
-                  <span className="text-primary-green mr-4">
+            <div className="p-6 my-8 border rounded border-secondary-sky">
+              <ul className="text-xl text-white">
+                <li className="flex items-center justify-start mt-4 first:mt-0">
+                  <span className="mr-4 text-primary-green">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Application Changes
                 </li>
-                <li className="first:mt-0 mt-4 flex justify-start items-center">
-                  <span className="text-primary-green mr-4">
+                <li className="flex items-center justify-start mt-4 first:mt-0">
+                  <span className="mr-4 text-primary-green">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Tailored Flexibility
                 </li>
-                <li className="first:mt-0 mt-4 flex justify-start items-center">
-                  <span className="text-primary-green mr-4">
+                <li className="flex items-center justify-start mt-4 first:mt-0">
+                  <span className="mr-4 text-primary-green">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Specialization Insights
@@ -113,7 +113,7 @@ const BestSeat = () => {
             >
               Learn More
               <MoveRight
-                className="text-primary-green text-base ml-3"
+                className="ml-3 text-base text-primary-green"
                 size={28}
               />
             </button>

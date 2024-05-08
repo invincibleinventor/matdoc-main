@@ -4,6 +4,10 @@ import Footer from "./components/Layout/Footer";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Home from "./screens/Home/Index";
 import { useEffect } from "react";
+import EnquiryNow from "./screens/EnquiryNow";
+import UGExam from "./screens/UGExam/Index";
+import PGExam from "./screens/PGExam/Index";
+import ContactUs from "./screens/ContactUs/Index";
 
 function App() {
   useEffect(() => {
@@ -22,6 +26,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/enquiry-form" element={<EnquiryNow />} />
+          <Route path="/neet-ug" element={<UGExam />} />
+          <Route path="/neet-pg" element={<PGExam />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
       </BrowserRouter>

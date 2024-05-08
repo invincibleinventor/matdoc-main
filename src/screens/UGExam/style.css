@@ -1,0 +1,15 @@
+.exam-features .illustration {
+    min-width: 200px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 4px 4px, 8px 8px #fff;
+}
+.shadow-blue {
+    color: #b0ddff;;
+}
+.shadow-green {
+    color:  #b1e58e;
+}
+.shadow-yellow {
+    color:  #ffedac;
+}

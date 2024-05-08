@@ -11,7 +11,7 @@ const ConsellingPlatform = () => {
     <section className="w-full py-20 bg-black ">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
         <p className="text-sm text-center text-white" data-aos="fade-up">
-          Meet ZyNerd
+          Meet MAT DOC
         </p>
         <h2 className="mt-1 mb-5 text-center text-white" data-aos="fade-up">
           The Next-Gen Counselling <br className="hidden lg:block" /> Platform

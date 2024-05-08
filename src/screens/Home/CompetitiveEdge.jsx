@@ -34,30 +34,31 @@ const CompetitiveEdge = () => {
   ];
   return (
     <section className="w-full py-20 ">
-      <div className="px-5 mx-auto lg:container xl:max-w-screen-xl  ">
-        <div className="bg-secondary-sky rounded p-10">
+      <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
+        <div className="p-10 rounded bg-secondary-sky">
           <p className="text-sm text-center text-black" data-aos="fade-up">
-            THE ZyNerd IMPACT
+            THE MAT DOC IMPACT
           </p>
           <h2 className="mt-1 mb-5 text-center text-black" data-aos="fade-up">
-            Your Competitive Edge with <br className="hidden lg:block" /> ZyNerd
+            Your Competitive Edge with <br className="hidden lg:block" /> MAT
+            DOC
           </h2>
           <p className="text-xl text-center text-black" data-aos="fade-up">
-            Here's how the ZyNerd Platform enhances your chances of securing a
+            Here's how the MAT DOC Platform enhances your chances of securing a
             better medical seat
           </p>
           <div className="flex justify-between w-full mt-14" data-aos="fade-up">
             {data.map((item) => (
               <div className="w-[25%]  " key={item.id}>
-                <p className="text-sm text-black font-semibold">{item.para}</p>
-                <h2 className="text-7xl text-black">
+                <p className="text-sm font-semibold text-black">{item.para}</p>
+                <h2 className="text-black text-7xl">
                   {item.title}
                   <span className="text-3xl">{item.subTitle}</span>
                 </h2>
-                <h4 className="text-2xl mt-5 text-black font-medium">
+                <h4 className="mt-5 text-2xl font-medium text-black">
                   {item.heading}
                 </h4>
-                <h4 className="text-xl mt-2 text-black">{item.description}</h4>
+                <h4 className="mt-2 text-xl text-black">{item.description}</h4>
                 <img
                   src={item.img}
                   alt={item.heading}

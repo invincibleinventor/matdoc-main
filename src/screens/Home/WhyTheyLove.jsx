@@ -41,7 +41,7 @@ const WhyTheyLove = () => {
           ASK OUR USERS
         </p>
         <h2 className="mt-1 mb-5 text-white" data-aos="fade-up">
-          Why they love ZyNerd
+          Why they love MAT DOC
         </h2>
         <Swiper
           spaceBetween={20}

@@ -37,7 +37,7 @@ const Home = () => {
               "
         img={Assets.Tailored}
         para=" 
-                  At ZyNerd, we understand that your time is precious. Say
+                  At MAT DOC, we understand that your time is precious. Say
                   goodbye to information overload and welcome a seamless
                   experience.
                 "

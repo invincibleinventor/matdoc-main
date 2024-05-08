@@ -15,7 +15,7 @@ const YouDeserve = () => {
           <p className="text-xl text-center text-black">
             Join 1M+ students from all 30 states of India
             <br className="hidden lg:block" />
-            who have got better seats with ZyNerd
+            who have got better seats with MAT DOC
           </p>
           <button
             type="button"

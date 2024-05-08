@@ -14,8 +14,21 @@ import ResourcesFAQ from "./Home/resources-illustration.png";
 import Cheaper from "./Home/low-cost-chart.svg";
 import Faster from "./Home/faster-chart.svg";
 import MoreSuccess from "./Home/growth-graph.svg";
+import UGExamBanner from "./Exams/ug-video-thumbnail.png";
+import Clarity from "./Exams/clarity-illustration.png";
+import Growth from "./Exams/growth-illustration.png";
+import Money from "./Exams/money-illustration.png";
+import Navigating from "./Exams/map-illustration.png";
+import Research from "./Exams/idea-illustration.png";
+import Flexibility from "./Exams/tailor-illustration.png";
 
 export const Assets = {
+  Navigating,
+  Research,
+  Flexibility,
+  Money,
+  Growth,
+  Clarity,
   MatDoc,
   AnnouncementEvents,
   ClosingRanks,
@@ -32,4 +45,5 @@ export const Assets = {
   Cheaper,
   Faster,
   MoreSuccess,
+  UGExamBanner,
 };
