@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { MoveRight, Star } from "lucide-react";
 import CountUp from "react-countup";
 const Banner = () => {
   const clientCount = [
@@ -60,7 +60,8 @@ const Banner = () => {
           type="button"
           className="flex items-center justify-center px-5 py-3 mx-auto mt-10 text-xl font-semibold bg-white rounded cursor-pointer text-primary-black"
         >
-          Get Started
+          Get Started{" "}
+          <MoveRight className="text-primary-green text-base ml-3" size={28} />
         </button>
         <div className="flex items-center justify-between w-full mt-20 ">
           {clientCount.map((client) => (

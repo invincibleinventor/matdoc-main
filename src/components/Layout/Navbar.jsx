@@ -133,7 +133,7 @@ const Navbar = () => {
                     />
                   )}
                 </Link>
-                {menu.subMenu && openSubmenus.includes(menu.id) && (
+                {/* {menu.subMenu && openSubmenus.includes(menu.id) && (
                   <ul className="absolute left-0 py-2 text-black bg-white rounded shadow-lg top-full">
                     {menu.subMenu.map((subItem) => (
                       <li key={subItem.id}>
@@ -146,27 +146,27 @@ const Navbar = () => {
                       </li>
                     ))}
                   </ul>
-                )}
+                )} */}
               </li>
             ))}
           </ul>
         </div>
         <div className="w-[17%] flex justify-end items-center ">
           <ul className="items-center justify-end hidden ml-4 lg:flex">
-            <li className="flex items-center justify-center px-5 py-2 bg-white rounded cursor-pointer text-primary-black">
+            <li className="flex items-center justify-center px-5 py-2 text-base text-black bg-white rounded cursor-pointer">
               Sign in / Sign up
             </li>
           </ul>
           <ul className="flex items-center justify-end lg:hidden">
             {mobileModal ? (
               <X
-                className="relative z-50 text-primary-black"
+                className="relative z-50 text-white"
                 size={30}
                 onClick={() => setMobileModal(false)}
               />
             ) : (
               <Menu
-                className="text-primary-black"
+                className="text-white"
                 size={30}
                 onClick={() => setMobileModal(true)}
               />

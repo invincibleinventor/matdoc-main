@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import "aos/dist/aos.css";
-/* @import "swiper/css";
-@import "swiper/css/navigation"; */
+@import "swiper/css";
+@import "swiper/css/navigation";
 
 @tailwind base;
 @tailwind components;
@@ -56,6 +56,9 @@ ul li {
 .shadow-normal{
  box-shadow: 4px 4px #fff;
 }
+.shadow-reverse{
+ box-shadow: -4px 4px #fff;
+}
 .highlight-container, .highlight{
   position: relative;
 }
@@ -94,4 +97,28 @@ ul li {
     backdrop-filter: blur(39.1977px);
     background-size: 100% 100%, 100% 100%;
     box-shadow: 2.23987px 4.47974px 33.598px #001730;
+}
+.swiper-button-prev{
+  color: #fff;
+  right: 65px;
+  left: unset;
+  top: 23px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-next{
+  color: #fff;
+  left: unset;
+  right: 0;
+  top: 23px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+}
+.swiper-button-prev::after , 
+.swiper-button-next::after {
+  font-size: 22px !important;
 }

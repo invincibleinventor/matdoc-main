@@ -11,6 +11,9 @@ import SelfServices from "./Home/choice-filing-illustration.png";
 import Community from "./Home/community-illustration.png";
 import VediosWebinars from "./Home/videos-illustration.png";
 import ResourcesFAQ from "./Home/resources-illustration.png";
+import Cheaper from "./Home/low-cost-chart.svg";
+import Faster from "./Home/faster-chart.svg";
+import MoreSuccess from "./Home/growth-graph.svg";
 
 export const Assets = {
   MatDoc,
@@ -26,4 +29,7 @@ export const Assets = {
   Community,
   VediosWebinars,
   ResourcesFAQ,
+  Cheaper,
+  Faster,
+  MoreSuccess,
 };

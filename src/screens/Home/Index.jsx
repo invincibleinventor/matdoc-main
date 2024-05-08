@@ -1,10 +1,14 @@
 import { Assets } from "../../assets/Assets";
 import Banner from "./Banner";
+import BestSeat from "./BestSeat";
+import CompetitiveEdge from "./CompetitiveEdge";
 import ConsellingPlatform from "./ConsellingPlatform";
 import DedicatedCompanion from "./DedicatedCompainon";
 import DedicatedLeftBox from "./DedicatedLeftBox";
 import DedicatedRightBox from "./DedicatedRightBox";
 import WhyZyNerd from "./WhyZyNerd";
+import WhyTheyLove from "./WhyTheyLove";
+import YouDeserve from "./YouDeserve";
 
 const Home = () => {
   return (
@@ -113,6 +117,10 @@ const Home = () => {
                 
                 "
       />
+      <BestSeat />
+      <CompetitiveEdge />
+      <WhyTheyLove />
+      <YouDeserve />
     </>
   );
 };
