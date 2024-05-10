@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import Form from "../../components/Atoms/Form";
+import { Helmet } from "react-helmet";
 
 const EnquiryNow = () => {
+  useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }, []);
   const data = [
     {
       id: 1,
@@ -18,37 +23,44 @@ const EnquiryNow = () => {
         "So, why tackle NEET counselling alone? Join the MAT DOC family, and let's turn your medical dreams into reality together!",
     },
   ];
+
   return (
-    <section className="w-full py-20 ">
-      <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
-        <h2 className="text-center text-white " data-aos="fade-up">
-          Your medical dreams are now <br className="hidden lg:block" />{" "}
-          simplified with MAT DOC!
-        </h2>
-        <div
-          className="flex flex-wrap justify-between w-full mt-12 gap-y-7"
-          data-aos="fade-up"
-        >
-          {data.map((item) => (
-            <div
-              className="w-[32%] px-8 py-12 text-white rounded  HomeCards "
-              key={item.id}
-            >
-              <p className="text-xl font-medium leading-8 text-white">
-                {item.description}
-              </p>
-            </div>
-          ))}
+    <>
+      <Helmet>
+        <title>Enquiry Form - MAT DOC</title>
+      </Helmet>
+      ;
+      <section className="w-full py-20 ">
+        <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
+          <h2 className="text-center text-white " data-aos="fade-up">
+            Your medical dreams are now <br className="hidden lg:block" />{" "}
+            simplified with MAT DOC!
+          </h2>
+          <div
+            className="flex flex-wrap justify-between w-full mt-12 gap-y-7"
+            data-aos="fade-up"
+          >
+            {data.map((item) => (
+              <div
+                className="w-[32%] px-8 py-12 text-white rounded  HomeCards "
+                key={item.id}
+              >
+                <p className="text-xl font-medium leading-8 text-white">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+          <h3
+            className="mt-12 mb-5 text-3xl text-center text-white"
+            data-aos="fade-up"
+          >
+            Let's get started
+          </h3>
+          <Form />
         </div>
-        <h3
-          className="mt-12 mb-5 text-3xl text-center text-white"
-          data-aos="fade-up"
-        >
-          Let's get started
-        </h3>
-        <Form />
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

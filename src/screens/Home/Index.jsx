@@ -9,8 +9,12 @@ import DedicatedRightBox from "./DedicatedRightBox";
 import WhyZyNerd from "./WhyZyNerd";
 import WhyTheyLove from "./WhyTheyLove";
 import YouDeserve from "./YouDeserve";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }, []);
   return (
     <>
       <Banner />

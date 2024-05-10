@@ -10,12 +10,12 @@ const Footer = () => {
     {
       id: 1,
       name: "Contact Us",
-      link: "#",
+      link: "/contact-us",
     },
     {
       id: 2,
       name: "Carrers",
-      link: "#",
+      link: "/careers",
     },
     {
       id: 3,
