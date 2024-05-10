@@ -9,6 +9,11 @@ import UGExam from "./screens/UGExam/Index";
 import PGExam from "./screens/PGExam/Index";
 import ContactUs from "./screens/ContactUs/Index";
 import Carrer from "./screens/Carrer/Index";
+import NeetCounsellingProcess from "./screens/NeetCounsellingProcess/Index";
+import TopCollegesForNeet from "./screens/TopCollegesForNeet/Index";
+import NeetUgCounsellingDate from "./screens/NeetUgCounsellingDate/Index";
+import NeetCutOff from "./screens/NeetCutOff/Index";
+import DedicatedCompanion from "./screens/Home/DedicatedCompainon";
 
 function App() {
   useEffect(() => {
@@ -27,12 +32,31 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route
+            path="/#yourdedicatedfeatures"
+            element={<DedicatedCompanion />}
+          />
           <Route path="/enquiry-form" element={<EnquiryNow />} />
           <Route path="/neet-ug" element={<UGExam />} />
           <Route path="/neet-pg" element={<PGExam />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/careers" element={<Carrer />} />
+          <Route
+            path="/neet-counselling-process"
+            element={<NeetCounsellingProcess />}
+          />
+
+          <Route
+            path="/top-colleges-for-neet"
+            element={<TopCollegesForNeet />}
+          />
+          <Route
+            path="/neet-ug-counselling-date"
+            element={<NeetUgCounsellingDate />}
+          />
+          <Route path="/neet-cut-off" element={<NeetCutOff />} />
         </Routes>
+
         <Footer />
       </BrowserRouter>
     </>

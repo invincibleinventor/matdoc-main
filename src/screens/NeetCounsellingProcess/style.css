@@ -1,0 +1,24 @@
+.resources .illustration-resources {
+    min-width: 180px;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    box-shadow: 4px 4px, 8px 8px #fff;
+}
+.shadow-blue {
+    color: #b0ddff;
+}
+.shadow-yellow {
+    color:  #ffedac;
+}
+.shadow-red {
+    color: #FFACAC;
+}
+.shadow-violet {
+    color: #bfcdff;
+}
+.shadow-sandle {
+    color: #ffcbae;
+}
+.shadow-green {
+    color: #b1e58e;
+}

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Assets } from "../../assets/Assets";
-import {  ChevronDown, Menu, X,  } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
     {
       id: 1,
       name: "Features",
-      link: "#",
+      link: "/#yourdedicatedfeatures",
     },
     {
       id: 2,
@@ -52,22 +52,22 @@ const Navbar = () => {
         {
           id: 1,
           name: "NEET Counselling Process",
-          link: "#",
+          link: "/neet-counselling-process",
         },
         {
           id: 2,
           name: "Top Colleges for Neet",
-          link: "#",
+          link: "/top-colleges-for-neet",
         },
         {
           id: 3,
           name: "NEET UG Counselling Date",
-          link: "#",
+          link: "/neet-ug-counselling-date",
         },
         {
           id: 4,
           name: "NEET cut-off",
-          link: "#",
+          link: "/neet-cut-off",
         },
       ],
     },
@@ -122,25 +122,36 @@ const Navbar = () => {
           <ul className="items-center justify-center hidden lg:flex gap-x-4 xl:gap-x-7">
             {menuBar.map((menu) => (
               <li className="relative text-base text-white " key={menu.id}>
-                <Link
-                  to={menu.link}
-                  className="flex items-center justify-start text-xl font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
-                  rel="canonical"
-                  onClick={() => toggleSubmenu(menu.id)}
-                >
-                  {menu.name}
-                  {menu.subMenu && (
-                    <ChevronDown
-                      className={`ml-2 text-white duration-300 ease-in-out
+                {menu.id == 1 ? (
+                  <a
+                    href={menu.link}
+                    className="flex items-center justify-start text-xl font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
+                    rel="canonical"
+                  >
+                    {menu.name}
+                  </a>
+                ) : (
+                  <Link
+                    to={menu.link}
+                    className="flex items-center justify-start text-xl font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
+                    rel="canonical"
+                    onClick={() => toggleSubmenu(menu.id)}
+                  >
+                    {menu.name}
+                    {menu.subMenu && (
+                      <ChevronDown
+                        className={`ml-2 text-white duration-300 ease-in-out
                     ${
                       openSubmenus.includes(menu.id)
                         ? "rotate-180 duration-300 ease-in-out"
                         : "rotate-0 duration-300 ease-in-out"
                     }`}
-                      size={20}
-                    />
-                  )}
-                </Link>
+                        size={20}
+                      />
+                    )}
+                  </Link>
+                )}
+
                 {menu.subMenu && openSubmenus.includes(menu.id) && (
                   <ul className="absolute min-w-[420px] left-1/2 -translate-x-1/2  text-white bg-black border-2 rounded shadow-lg border-secondary-sky top-12 py-5 px-5">
                     {menu.subMenu.map((subItem) => (
@@ -150,6 +161,7 @@ const Navbar = () => {
                       >
                         <Link
                           to={subItem.link}
+                          rel="canonical"
                           className="block px-8 py-5 rounded hover:bg-slate-800"
                         >
                           <h3 className="text-2xl"> {subItem.name}</h3>

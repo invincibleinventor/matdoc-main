@@ -13,7 +13,14 @@ import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+    if (window.location.hash === "#yourdedicatedfeatures") {
+      document
+        .querySelector("#yourdedicatedfeatures")
+        .scrollIntoView({ behavior: "smooth" });
+    } else {
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+  
   }, []);
   return (
     <>

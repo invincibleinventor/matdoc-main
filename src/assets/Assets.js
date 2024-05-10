@@ -22,8 +22,32 @@ import Navigating from "./Exams/map-illustration.png";
 import Research from "./Exams/idea-illustration.png";
 import Flexibility from "./Exams/tailor-illustration.png";
 import Carers from "./Careers/careers-primary.png";
+import Conducted from "./Resources/NeetCounsellingProcess/conducted-illustration.png";
+import Exploring from "./Resources/NeetCounsellingProcess/exploring-illustration.png";
+import Modes from "./Resources/NeetCounsellingProcess/modes-illustration.png";
+import Number from "./Resources/NeetCounsellingProcess/number-illustration.png";
+import Participation from "./Resources/NeetCounsellingProcess/participation-illustration.png";
+import Registration from "./Resources/NeetCounsellingProcess/registration-illustration.png";
+import Campus from "./Resources/TopCollegesForNeet/campus-illustraition.png";
+import Infrastructure from "./Resources/TopCollegesForNeet/infrastructure-illustration.png";
+import Offered from "./Resources/TopCollegesForNeet/offered-illustration.png";
+import Placement from "./Resources/TopCollegesForNeet/placement-illustration.png";
+import Rankings from "./Resources/TopCollegesForNeet/rankings-illustration.png";
+import Recognition from "./Resources/TopCollegesForNeet/recognition-illustration.png";
 
 export const Assets = {
+  Campus,
+  Infrastructure,
+  Offered,
+  Placement,
+  Rankings,
+  Recognition,
+  Registration,
+  Participation,
+  Conducted,
+  Exploring,
+  Modes,
+  Number,
   Carers,
   Navigating,
   Research,

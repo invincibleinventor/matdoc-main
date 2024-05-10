@@ -1,6 +1,6 @@
 const DedicatedCompanion = () => {
   return (
-    <section className="w-full pt-20 bg-black ">
+    <section className="w-full pt-20 bg-black " id="yourdedicatedfeatures">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
         <p className="text-sm text-center text-white" data-aos="fade-up">
           YOUR DEDICATED COMPANION
