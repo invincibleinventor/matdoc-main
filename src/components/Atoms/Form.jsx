@@ -1,4 +1,5 @@
 import { MoveRight } from "lucide-react";
+import Button from "./button";
 
 const Form = () => {
   return (
@@ -68,13 +69,8 @@ const Form = () => {
           Terms of Service
         </span>
       </p>
-      <button
-        type="button"
-        data-aos="fade-up"
-        className="flex items-center justify-center px-5 py-3 mt-10 text-xl font-semibold bg-white rounded cursor-pointer text-primary-black"
-      >
-        Submit <MoveRight className="ml-3 text-base text-primary-green" />
-      </button>
+
+      <Button text="Submit" classes=" common-btn blue mt-9 mx-0" />
     </form>
   );
 };

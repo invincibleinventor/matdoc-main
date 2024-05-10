@@ -1,6 +1,7 @@
 import { MoveRight, Play } from "lucide-react";
 import "./style.css";
 import PropTypes from "prop-types";
+import Button from "../../components/Atoms/button";
 
 const Banner = ({
   PageTitle,
@@ -99,14 +100,7 @@ const Banner = ({
             <p className="mt-5 text-xl text-white">{box3desc}</p>
           </div>
         </div>
-        <button
-          type="button"
-          data-aos="fade-up"
-          className="flex items-center justify-center px-5 py-3 mx-auto mt-24 text-xl font-semibold bg-white rounded cursor-pointer text-primary-black"
-        >
-          Explore Packages{" "}
-          <MoveRight className="ml-3 text-base text-primary-green" />
-        </button>
+        <Button text="Explore Packages" classes=" common-btn blue mt-24" />
       </div>
     </section>
   );

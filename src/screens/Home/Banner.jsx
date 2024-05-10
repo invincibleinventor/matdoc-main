@@ -1,5 +1,7 @@
-import { MoveRight, Star } from "lucide-react";
+import { Star } from "lucide-react";
 import CountUp from "react-countup";
+import Button from "../../components/Atoms/button";
+
 const Banner = () => {
   const clientCount = [
     {
@@ -56,13 +58,8 @@ const Banner = () => {
         <p className="text-2xl text-center text-white">
           {`Let's take the guess work out of your choice filling.`}
         </p>
-        <button
-          type="button"
-          className="flex items-center justify-center px-5 py-3 mx-auto mt-10 text-xl font-semibold bg-white rounded cursor-pointer text-primary-black"
-        >
-          Get Started{" "}
-          <MoveRight className="text-primary-green text-base ml-3" size={28} />
-        </button>
+        <Button text="Get Started" classes=" common-btn blue mt-14" />
+
         <div className="flex items-center justify-between w-full mt-20 ">
           {clientCount.map((client) => (
             <div

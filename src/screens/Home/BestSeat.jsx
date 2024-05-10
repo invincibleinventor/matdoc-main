@@ -1,4 +1,5 @@
 import { CircleCheck, MoveRight } from "lucide-react";
+import Button from "../../components/Atoms/button";
 
 const BestSeat = () => {
   return (
@@ -59,16 +60,7 @@ const BestSeat = () => {
                 </li>
               </ul>
             </div>
-            <button
-              type="button"
-              className="flex items-center justify-center px-5 py-3 mx-auto mt-10 text-xl font-semibold bg-white rounded cursor-pointer text-primary-black"
-            >
-              Learn More
-              <MoveRight
-                className="ml-3 text-base text-primary-green"
-                size={28}
-              />
-            </button>
+            <Button text="Learn More" classes=" common-btn blue mt-10" />
           </div>
           <div
             className="w-[48%] border border-secondary-sky shadow-normal rounded p-10"
@@ -107,16 +99,7 @@ const BestSeat = () => {
                 </li>
               </ul>
             </div>
-            <button
-              type="button"
-              className="flex items-center justify-center px-5 py-3 mx-auto mt-10 text-xl font-semibold bg-white rounded cursor-pointer text-primary-black"
-            >
-              Learn More
-              <MoveRight
-                className="ml-3 text-base text-primary-green"
-                size={28}
-              />
-            </button>
+            <Button text="Learn More" classes=" common-btn blue mt-10" />
           </div>
         </div>
       </div>

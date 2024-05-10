@@ -1,4 +1,5 @@
 import { MoveRight } from "lucide-react";
+import Button from "../../components/Atoms/button";
 
 const YouDeserve = () => {
   return (
@@ -17,16 +18,8 @@ const YouDeserve = () => {
             <br className="hidden lg:block" />
             who have got better seats with MAT DOC
           </p>
-          <button
-            type="button"
-            className="flex items-center justify-center px-5 py-3 mx-auto mt-16 text-xl font-semibold text-white bg-black rounded cursor-pointer text-primary-black"
-          >
-            Get Started{" "}
-            <MoveRight
-              className="ml-3 text-base text-primary-green"
-              size={28}
-            />
-          </button>
+
+          <Button text="Get Started" classes=" secondary-btn black mt-10" />
         </div>
       </div>
     </section>
