@@ -100,7 +100,7 @@ const OpenPosition = () => {
         </h2>
         <div className="w-full mt-14">
           {data.map((item) => (
-            <div className="mt-10 first:mt-0" key={item.id}>
+            <div className="mt-10 first:mt-0" key={item.id} data-aos="fade-up">
               <h4 className="text-2xl text-white">{item.heading}</h4>
               <div className="flex justify-start w-full mt-5 gap-x-8">
                 {item.submenu?.map((subItem) => (
