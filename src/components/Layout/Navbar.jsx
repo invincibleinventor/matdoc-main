@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Assets } from "../../assets/Assets";
 import { ChevronDown, Menu, X } from "lucide-react";
+import MobileModal from "./MobileModal";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -200,6 +201,10 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      <MobileModal
+        isActive={mobileModal}
+        onClose={() => setMobileModal(false)}
+      />
     </section>
   );
 };
