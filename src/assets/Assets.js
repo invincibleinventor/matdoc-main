@@ -21,8 +21,10 @@ import Money from "./Exams/money-illustration.png";
 import Navigating from "./Exams/map-illustration.png";
 import Research from "./Exams/idea-illustration.png";
 import Flexibility from "./Exams/tailor-illustration.png";
+import Carers from "./Careers/careers-primary.png";
 
 export const Assets = {
+  Carers,
   Navigating,
   Research,
   Flexibility,

@@ -73,6 +73,9 @@ ul li {
 .shadow-normal{
  box-shadow: 4px 4px #fff;
 }
+.shadow-normal-hover:hover{
+  box-shadow: -4px 4px #fff;
+}
 .shadow-reverse{
  box-shadow: -4px 4px #fff;
 }

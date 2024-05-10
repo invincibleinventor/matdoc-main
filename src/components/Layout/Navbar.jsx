@@ -79,7 +79,7 @@ const Navbar = () => {
     {
       id: 5,
       name: "Careers",
-      link: "#",
+      link: "/careers",
     },
     {
       id: 6,

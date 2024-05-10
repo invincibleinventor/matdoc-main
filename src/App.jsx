@@ -8,6 +8,7 @@ import EnquiryNow from "./screens/EnquiryNow";
 import UGExam from "./screens/UGExam/Index";
 import PGExam from "./screens/PGExam/Index";
 import ContactUs from "./screens/ContactUs/Index";
+import Carrer from "./screens/Carrer/Index";
 
 function App() {
   useEffect(() => {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/neet-ug" element={<UGExam />} />
           <Route path="/neet-pg" element={<PGExam />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/careers" element={<Carrer />} />
         </Routes>
         <Footer />
       </BrowserRouter>

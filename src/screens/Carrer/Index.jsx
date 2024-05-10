@@ -1,5 +1,13 @@
+import Banner from "./Banner";
+import OpenPosition from "./OpenPosition";
+
 const Career = () => {
-  return <div></div>;
+  return (
+    <>
+      <Banner />
+      <OpenPosition />
+    </>
+  );
 };
 
 export default Career;
