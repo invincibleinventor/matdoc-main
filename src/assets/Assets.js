@@ -36,8 +36,20 @@ import Rankings from "./Resources/TopCollegesForNeet/rankings-illustration.png";
 import Recognition from "./Resources/TopCollegesForNeet/recognition-illustration.png";
 import NEETProcessWeb from "./Resources/NeetCounsellingProcess/flow-web-zy.png";
 import DoctorPost from "./Resources/NeetCounsellingProcess/doctors.png";
+import ChoiceFilling from "./Resources/NeetUGCounsellingDate/Choice Filling-illustration.png";
+import Fee from "./Resources/NeetUGCounsellingDate/Fee-illustration.png";
+import RegistrationMcc from "./Resources/NeetUGCounsellingDate/Registration-mcc-illustration.png";
+import Report from "./Resources/NeetUGCounsellingDate/Report-illustration.png";
+import Seat from "./Resources/NeetUGCounsellingDate/seat-illustration.png";
+import Verification from "./Resources/NeetUGCounsellingDate/Verification-illustration.png";
 
 export const Assets = {
+  Verification,
+  ChoiceFilling,
+  Fee,
+  RegistrationMcc,
+  Seat,
+  Report,
   DoctorPost,
   NEETProcessWeb,
   Campus,

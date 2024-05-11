@@ -3,6 +3,7 @@ const EligibilityCriteria = ({
   eligibilityTitle,
   eligibilityDescription,
   eligibilityData,
+  eligibilityPara,
 }) => {
   return (
     <section className="w-full py-16 bg-black ">
@@ -26,6 +27,11 @@ const EligibilityCriteria = ({
               </li>
             ))}
         </ul>
+        {eligibilityPara && (
+          <p className="mt-10 text-lg text-center text-white">
+            {eligibilityPara}
+          </p>
+        )}
       </div>
     </section>
   );
@@ -34,5 +40,6 @@ EligibilityCriteria.propTypes = {
   eligibilityTitle: PropTypes.func.isRequired,
   eligibilityDescription: PropTypes.func.isRequired,
   eligibilityData: PropTypes.func.isRequired,
+  eligibilityPara: PropTypes.func.isRequired,
 };
 export default EligibilityCriteria;
