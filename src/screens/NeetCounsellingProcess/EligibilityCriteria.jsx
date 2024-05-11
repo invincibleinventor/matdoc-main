@@ -12,10 +12,12 @@ const EligibilityCriteria = ({
         data-aos="fade-up"
       >
         <h2 className="text-center text-white ">{eligibilityTitle}</h2>
+        {eligibilityDescription && (
+          <p className="mt-5 text-xl text-center text-white">
+            {eligibilityDescription}
+          </p>
+        )}
 
-        <p className="mt-5 text-xl text-center text-white">
-          {eligibilityDescription}
-        </p>
         <ul className=" mt-10 w-[80%] mx-auto">
           {eligibilityData &&
             eligibilityData.map((item, index) => (

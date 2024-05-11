@@ -1,7 +1,12 @@
 import "./style.css";
 import PropTypes from "prop-types";
 
-const WhatIsProcess = ({ processTitle, processDescription, processData }) => {
+const WhatIsProcess = ({
+  processTitle,
+  processDescription,
+  processData,
+  processPara,
+}) => {
   return (
     <section className="w-full py-20 bg-black ">
       <div
@@ -45,6 +50,10 @@ const WhatIsProcess = ({ processTitle, processDescription, processData }) => {
               </div>
             </div>
           ))}
+
+        {processPara && (
+          <p className="mt-16 text-lg text-center text-white">{processPara}</p>
+        )}
       </div>
     </section>
   );
@@ -53,5 +62,6 @@ WhatIsProcess.propTypes = {
   processTitle: PropTypes.func.isRequired,
   processDescription: PropTypes.func.isRequired,
   processData: PropTypes.func.isRequired,
+  processPara: PropTypes.func.isRequired,
 };
 export default WhatIsProcess;
