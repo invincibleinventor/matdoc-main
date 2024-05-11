@@ -4,6 +4,7 @@ const EducationQualification = ({
   educationTitle,
   educationData,
   educationPara,
+  educationdescription,
 }) => {
   return (
     <section className="w-full py-16 bg-black ">
@@ -12,6 +13,11 @@ const EducationQualification = ({
         data-aos="fade-up"
       >
         <h2 className="text-center text-white ">{educationTitle}</h2>
+        {educationdescription && (
+          <p className="mt-5 text-lg text-center text-white">
+            {educationdescription}
+          </p>
+        )}
         <div className="flex flex-wrap justify-between w-full mt-16 gap-y-10 ">
           {educationData &&
             educationData.map((data) => (
@@ -42,5 +48,6 @@ EducationQualification.propTypes = {
   educationTitle: PropTypes.func.isRequired,
   educationData: PropTypes.func.isRequired,
   educationPara: PropTypes.func.isRequired,
+  educationdescription: PropTypes.func.isRequired,
 };
 export default EducationQualification;

@@ -243,6 +243,11 @@ const NeetCounsellingProcess = () => {
     </>
   );
 
+  // Neet Process
+
+  const NeetProcesstitle = <>NEET Process</>;
+  const NeetProcessImg = Assets.NEETProcessWeb;
+
   return (
     <>
       <Helmet>
@@ -270,7 +275,10 @@ const NeetCounsellingProcess = () => {
         stateQuotaPara={stateQuotaPara}
         stateQuotaTitle={stateQuotaTitle}
       />
-      <NeetProcess />
+      <NeetProcess
+        NeetProcessImg={NeetProcessImg}
+        NeetProcesstitle={NeetProcesstitle}
+      />
       <PostDeclaration />
       <NEETSelection />
       <Frequently />

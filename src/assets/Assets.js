@@ -42,8 +42,18 @@ import RegistrationMcc from "./Resources/NeetUGCounsellingDate/Registration-mcc-
 import Report from "./Resources/NeetUGCounsellingDate/Report-illustration.png";
 import Seat from "./Resources/NeetUGCounsellingDate/seat-illustration.png";
 import Verification from "./Resources/NeetUGCounsellingDate/Verification-illustration.png";
+import Round01 from "./Resources/NeetUGCounsellingDate/01.png";
+import Round02 from "./Resources/NeetUGCounsellingDate/02.png";
+import Round03 from "./Resources/NeetUGCounsellingDate/03.png";
+import Round04 from "./Resources/NeetUGCounsellingDate/04.png";
+import MccWeb from "./Resources/NeetUGCounsellingDate/mcc-web-zy.png";
 
 export const Assets = {
+  MccWeb,
+  Round01,
+  Round02,
+  Round03,
+  Round04,
   Verification,
   ChoiceFilling,
   Fee,
