@@ -34,8 +34,12 @@ import Offered from "./Resources/TopCollegesForNeet/offered-illustration.png";
 import Placement from "./Resources/TopCollegesForNeet/placement-illustration.png";
 import Rankings from "./Resources/TopCollegesForNeet/rankings-illustration.png";
 import Recognition from "./Resources/TopCollegesForNeet/recognition-illustration.png";
+import NEETProcessWeb from "./Resources/NeetCounsellingProcess/flow-web-zy.png";
+import DoctorPost from "./Resources/NeetCounsellingProcess/doctors.png";
 
 export const Assets = {
+  DoctorPost,
+  NEETProcessWeb,
   Campus,
   Infrastructure,
   Offered,

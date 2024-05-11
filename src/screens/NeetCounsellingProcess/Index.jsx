@@ -4,6 +4,10 @@ import { Helmet } from "react-helmet";
 import WhatIsProcess from "./WhatIsProcess";
 import { Assets } from "../../assets/Assets";
 import EligibilityCriteria from "./EligibilityCriteria";
+import EducationQualification from "./EducationQualification";
+import StateQuota from "./StateQuota";
+import NeetProcess from "./NeetProcess";
+import PostDeclaration from "./PostDeclaration";
 
 const NeetCounsellingProcess = () => {
   useEffect(() => {
@@ -172,6 +176,37 @@ const NeetCounsellingProcess = () => {
     },
   ];
 
+  //  Education Qualification
+
+  const educationTitle = <>Educational Qualification for NEET</>;
+
+  const educationData = [
+    {
+      id: 1,
+      desc: "Candidates must have cleared Class 12 Board Exams from a  recognized board with Physics, Chemistry, Biology/Biotechnology, and English as compulsory subjects.",
+    },
+    {
+      id: 2,
+      desc: "They should have secured the requisite marks in Physics, Chemistry, and Biology/Biotechnology and obtained a minimum aggregate score in these subjects.",
+    },
+    {
+      id: 3,
+      desc: "The minimum qualifying marks vary for different categories, with Scheduled Caste/Scheduled Tribes/Other Backward Classes and Persons with Disabilities having a different criteria.",
+    },
+    {
+      id: 4,
+      desc: "Candidates taking the Class XII exams are also eligible to take the entrance exam on a provisional basis, provided they meet the requirements outlined in the NEET notice.",
+    },
+    {
+      id: 5,
+      desc: "It's imperative for candidates to furnish proof of their date of birth while completing the NEET Application Form, ensuring adherence to the stipulated guidelines.",
+    },
+    {
+      id: 6,
+      desc: "With a clear understanding of the NEET seat allotment and eligibility criteria, aspiring candidates can embark on their journey towards pursuing their medical aspirations with confidence and clarity.",
+    },
+  ];
+
   return (
     <>
       <Helmet>
@@ -190,6 +225,13 @@ const NeetCounsellingProcess = () => {
         eligibilityDescription={eligibilityDescription}
         eligibilityData={eligibilityData}
       />
+      <EducationQualification
+        educationTitle={educationTitle}
+        educationData={educationData}
+      />
+      <StateQuota />
+      <NeetProcess />
+      <PostDeclaration />
     </>
   );
 };

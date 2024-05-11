@@ -22,3 +22,8 @@
 .shadow-green {
     color: #b1e58e;
 }
+
+.shadow-cards{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3), 0px 8px 15px rgba(0, 0, 0, .3), 0 0 0 1px rgba(255, 255, 255, 0.4);
+    transition: box-shadow 0.25s;
+}
