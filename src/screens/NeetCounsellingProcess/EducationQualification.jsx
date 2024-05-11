@@ -1,6 +1,10 @@
 import "./style.css";
 import PropTypes from "prop-types";
-const EducationQualification = ({ educationTitle, educationData }) => {
+const EducationQualification = ({
+  educationTitle,
+  educationData,
+  educationPara,
+}) => {
   return (
     <section className="w-full py-16 bg-black ">
       <div
@@ -18,10 +22,18 @@ const EducationQualification = ({ educationTitle, educationData }) => {
                 <div className="flex items-center justify-center w-10 h-10 text-white transition duration-300 ease-in-out border border-gray-500 rounded group-hover:bg-primary-brown ">
                   {data.id}
                 </div>
+                {data.title && (
+                  <h3 className="text-xl font-medium mt-7">{data.title}</h3>
+                )}
                 <p className="mt-5 text-lg">{data.desc}</p>
               </div>
             ))}
         </div>
+        {educationPara && (
+          <p className="mt-10 text-lg text-center text-white">
+            {educationPara}
+          </p>
+        )}
       </div>
     </section>
   );
@@ -29,5 +41,6 @@ const EducationQualification = ({ educationTitle, educationData }) => {
 EducationQualification.propTypes = {
   educationTitle: PropTypes.func.isRequired,
   educationData: PropTypes.func.isRequired,
+  educationPara: PropTypes.func.isRequired,
 };
 export default EducationQualification;

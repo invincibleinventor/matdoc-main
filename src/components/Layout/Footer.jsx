@@ -68,10 +68,7 @@ const Footer = () => {
   return (
     <>
       <section className="w-full bg-black border-t border-b border-gray-800 ">
-        <div
-          className="grid grid-cols-3 px-5 mx-auto xl:max-w-screen-xl lg:container"
-          data-aos="fade-up"
-        >
+        <div className="grid grid-cols-3 px-5 mx-auto xl:max-w-screen-xl lg:container">
           <div className="col-span-1 py-10">
             <Link to="/" className="max-w-[170px] flex h-auto">
               <img

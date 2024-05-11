@@ -8,6 +8,8 @@ import EducationQualification from "./EducationQualification";
 import StateQuota from "./StateQuota";
 import NeetProcess from "./NeetProcess";
 import PostDeclaration from "./PostDeclaration";
+import NEETSelection from "./NEETSelection";
+import Frequently from "./FAQ";
 
 const NeetCounsellingProcess = () => {
   useEffect(() => {
@@ -207,6 +209,40 @@ const NeetCounsellingProcess = () => {
     },
   ];
 
+  // State Quota
+
+  const stateQuotaTitle = <>State Quota and All India Quota Eligibility</>;
+  const stateQuotaDesc = (
+    <>
+      Candidates aspiring for state quota seats must fulfil specific
+      domicile/nativity/residence and schooling criteria. On the other hand, All
+      India Quota seats are open to Indian citizens meeting age and academic
+      requisites.
+    </>
+  );
+  const stateQuotaPara = (
+    <>
+      You must always remember that the NEET counselling registration and its
+      selection process is based upon a merit list (comprising All India Rank /
+      State Rank) prepared by the National Testing Agency (NTA) post the
+      successful conduct of the examination.
+    </>
+  );
+
+  // Conclusion
+
+  const conclusionQuotaTitle = <>Conclusion</>;
+  const conclusionQuotaDesc = (
+    <>
+      The NEET counselling process is not just a procedural step, it's your
+      bridge to a fulfilling medical career. Understanding its intricacies and
+      eligibility criteria empowers you to navigate this journey seamlessly. As
+      you embark on this transformative path, remember, each step brings you
+      closer to realizing your aspirations. Best of luck on your NEET
+      counselling journey!
+    </>
+  );
+
   return (
     <>
       <Helmet>
@@ -229,9 +265,19 @@ const NeetCounsellingProcess = () => {
         educationTitle={educationTitle}
         educationData={educationData}
       />
-      <StateQuota />
+      <StateQuota
+        stateQuotaDesc={stateQuotaDesc}
+        stateQuotaPara={stateQuotaPara}
+        stateQuotaTitle={stateQuotaTitle}
+      />
       <NeetProcess />
       <PostDeclaration />
+      <NEETSelection />
+      <Frequently />
+      <StateQuota
+        stateQuotaDesc={conclusionQuotaDesc}
+        stateQuotaTitle={conclusionQuotaTitle}
+      />
     </>
   );
 };
