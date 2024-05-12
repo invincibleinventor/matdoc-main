@@ -56,8 +56,10 @@ import AFMC from "./Resources/NeetCutOff/afmc-illustration.png";
 import AIIMS from "./Resources/NeetCutOff/aiims-illustration.png";
 import CMC from "./Resources/NeetCutOff/cmc-illustration.png";
 import MAMC from "./Resources/NeetCutOff/mamc-illustration.png";
+import BlogFirst from "./Blogs/blogFirst.jpg";
 
 export const Assets = {
+  BlogFirst,
   AFMC,
   AIIMS,
   CMC,
