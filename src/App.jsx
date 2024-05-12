@@ -15,6 +15,7 @@ import NeetUgCounsellingDate from "./screens/NeetUgCounsellingDate/Index";
 import NeetCutOff from "./screens/NeetCutOff/Index";
 import DedicatedCompanion from "./screens/Home/DedicatedCompainon";
 import SignIn from "./screens/Auth/SignIn";
+import Blog from "./screens/Blog/Index";
 
 function App() {
   useEffect(() => {
@@ -60,6 +61,7 @@ function App() {
           />
           <Route path="/neet-cut-off" element={<NeetCutOff />} />
           <Route path="/auth/login" element={<SignIn />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
         {!isLoginPage && <Footer />}
       </BrowserRouter>

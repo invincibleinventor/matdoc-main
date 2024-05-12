@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Assets } from "../../assets/Assets";
 import PhoneInput from "react-phone-number-input";
 import "./style.css";
