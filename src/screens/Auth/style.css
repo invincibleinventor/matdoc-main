@@ -1,0 +1,33 @@
+.PhoneInputInput {
+  background: transparent;
+  padding: 10px 12px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+}
+.PhoneInputInput:focus {
+ outline: none;
+
+}
+.PhoneInputCountrySelect {
+  width: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+.PhoneInputCountry {
+  width: 50px;
+  color: #000;
+}
+.PhoneInputCountrySelectArrow {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  border-right-width: 2px !important;
+  border-bottom-width: 2px !important;
+  border-color: #fff !important;
+}

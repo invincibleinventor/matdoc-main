@@ -14,6 +14,7 @@ import TopCollegesForNeet from "./screens/TopCollegesForNeet/Index";
 import NeetUgCounsellingDate from "./screens/NeetUgCounsellingDate/Index";
 import NeetCutOff from "./screens/NeetCutOff/Index";
 import DedicatedCompanion from "./screens/Home/DedicatedCompainon";
+import SignIn from "./screens/Auth/SignIn";
 
 function App() {
   useEffect(() => {
@@ -25,11 +26,14 @@ function App() {
       disable: window.innerWidth < 768,
     });
   }, []);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const isLoginPage = window.location.pathname === "/auth/login";
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        {!isLoginPage && <Navbar />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route
@@ -55,9 +59,9 @@ function App() {
             element={<NeetUgCounsellingDate />}
           />
           <Route path="/neet-cut-off" element={<NeetCutOff />} />
+          <Route path="/auth/login" element={<SignIn />} />
         </Routes>
-
-        <Footer />
+        {!isLoginPage && <Footer />}
       </BrowserRouter>
     </>
   );
