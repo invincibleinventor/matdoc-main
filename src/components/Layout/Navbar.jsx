@@ -182,7 +182,7 @@ const Navbar = () => {
           <ul className="items-center justify-end hidden ml-4 lg:flex">
             <li>
               <Link
-                href="/auth/login"
+                to="/auth/login"
                 rel="canonical"
                 target="_blank"
                 className="flex items-center justify-center px-5 py-2 text-base text-black bg-white rounded cursor-pointer"
