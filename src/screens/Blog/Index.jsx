@@ -42,7 +42,7 @@ const Blog = () => {
       <div className="flex justify-between w-full px-5 mx-auto lg:container xl:max-w-screen-xl ">
         <div className="w-[69%]">
           {data.map((item, index) => (
-            <div className="w-full mt-10 first:mt-0" key={index}>
+            <div className="w-full mt-16 first:mt-0" key={index}>
               <div className="relative w-full overflow-hidden rounded">
                 <img
                   src={item.image}
