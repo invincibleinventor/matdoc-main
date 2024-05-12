@@ -5,6 +5,7 @@ import { useState } from "react";
 import Button from "../../components/Atoms/button";
 import { MessageCircleMore } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const [value, setValue] = useState();
@@ -12,14 +13,14 @@ const SignIn = () => {
     <section className="flex items-center justify-center w-full h-screen bg-black">
       <div className="w-full px-5 mx-auto lg:container xl:max-w-screen-xl ">
         <div className="max-w-[540px] shadow-2xl mx-auto w-full border-2 border-gray-700  rounded px-10 py-14  ">
-          <a href="/" className="w-fit max-w-[180px] ">
+          <Link to="/" target="_blank" className="w-fit max-w-[180px] ">
             <img
               src={Assets.MatDoc}
               alt="MatDoc"
               title="MatDoc"
               className="object-contain max-w-[180px]  h-auto mx-auto transition duration-500 ease-in-out bg-transparent rounded cursor-pointer w-fit bg-blend-color-burn hover:scale-105"
             />
-          </a>
+          </Link>
           <form className="mt-5">
             <h2 className="text-3xl font-bold text-center text-white">
               Sign In / Sign Up
@@ -51,12 +52,13 @@ const SignIn = () => {
             />
             <p className="mt-8 text-base font-bold text-center text-white">
               Trouble signing in?
-              <a
-                href="/contact-us"
+              <Link
+                to="/contact-us"
+                target="_blank"
                 className="ml-2 font-medium underline underline-offset-3 text-primary-brown "
               >
                 Get Help
-              </a>
+              </Link>
             </p>
           </form>
         </div>
