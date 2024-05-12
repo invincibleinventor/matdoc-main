@@ -105,11 +105,7 @@ const MobileModal = ({ isActive, onClose }) => {
           <ul>
             {mobileNav.map((item) => (
               <li
-                className={`px-5 pb-2 mt-2 text-base text-white w-full font-normal capitalize transition hover:text-primary-green duration-300 ease-in-out border-b border-gray-600 cursor-pointer ${
-                  location.pathname === item.link
-                    ? "text-emerald"
-                    : "text-black-250"
-                } first:mt-0`}
+                className={`px-5 pb-2 mt-2 text-base text-white w-full font-normal capitalize transition  duration-300 ease-in-out border-b border-gray-600 cursor-pointer  first:mt-0`}
                 onClick={
                   item.title === "Exams" || item.title === "Resources"
                     ? null
@@ -144,9 +140,12 @@ const MobileModal = ({ isActive, onClose }) => {
                       )}
                     </span>
                     {item.title === "Exams" && isOpenGlobal && (
-                      <ul className="pl-5 text-base font-normal capitalize">
+                      <ul className="pl-5 text-base font-normal capitalize ">
                         {item.subMenu.map((subItem) => (
-                          <li key={subItem.id} className="w-full">
+                          <li
+                            key={subItem.id}
+                            className="w-full py-2 mt-0 first:mt-1"
+                          >
                             <Link
                               rel="canonical"
                               to={subItem.link}
@@ -166,7 +165,10 @@ const MobileModal = ({ isActive, onClose }) => {
                     {item.title === "Resources" && isOpenUSA && (
                       <ul className="pl-5 text-base font-normal capitalize">
                         {item.subMenu.map((subItem) => (
-                          <li key={subItem.id} className="w-full">
+                          <li
+                            key={subItem.id}
+                            className="w-full py-2 mt-0 first:mt-1"
+                          >
                             <Link
                               rel="canonical"
                               to={subItem.link}
