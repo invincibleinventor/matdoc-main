@@ -5,7 +5,6 @@ import { useState } from "react";
 import Button from "../../components/Atoms/button";
 import { MessageCircleMore } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const [value, setValue] = useState();
