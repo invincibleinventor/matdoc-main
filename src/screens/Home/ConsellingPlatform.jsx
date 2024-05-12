@@ -8,9 +8,12 @@ const ConsellingPlatform = () => {
     setActiveTab(tabNumber);
   };
   return (
-    <section className="w-full py-20 bg-black ">
+    <section className="w-full py-10 bg-black lg:py-20 ">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
-        <p className="text-sm text-center text-white" data-aos="fade-up">
+        <p
+          className="text-sm text-center text-white md:text-base"
+          data-aos="fade-up"
+        >
           Meet MAT DOC
         </p>
         <h2 className="mt-1 mb-5 text-center text-white" data-aos="fade-up">
@@ -20,9 +23,12 @@ const ConsellingPlatform = () => {
           Transform confusion to clarity, turn decisions into choices and make
           your dreams into reality.
         </p>
-        <div className="flex justify-center mt-14" data-aos="fade-up">
+        <div
+          className="flex flex-wrap justify-center mt-10 gap-y-5 lg:mt-14"
+          data-aos="fade-up"
+        >
           <button
-            className={`mr-6 min-w-[120px] text-2xl focus:outline-none relative ${
+            className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
               activeTab === 1 ? "text-primary-green font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(1)}
@@ -33,7 +39,7 @@ const ConsellingPlatform = () => {
             )}
           </button>
           <button
-            className={`mr-6 min-w-[120px] text-2xl focus:outline-none relative ${
+            className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
               activeTab === 2 ? "text-primary-green font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(2)}
@@ -44,7 +50,7 @@ const ConsellingPlatform = () => {
             )}
           </button>
           <button
-            className={`mr-6 min-w-[120px] text-2xl focus:outline-none relative ${
+            className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
               activeTab === 3 ? "text-primary-green font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(3)}
@@ -55,7 +61,7 @@ const ConsellingPlatform = () => {
             )}
           </button>
           <button
-            className={`mr-6 min-w-[120px] text-2xl focus:outline-none relative ${
+            className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
               activeTab === 4 ? "text-primary-green font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(4)}
@@ -66,7 +72,7 @@ const ConsellingPlatform = () => {
             )}
           </button>
           <button
-            className={`mr-6 min-w-[120px] text-2xl focus:outline-none relative ${
+            className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
               activeTab === 5 ? "text-primary-green font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(5)}
@@ -77,7 +83,7 @@ const ConsellingPlatform = () => {
             )}
           </button>
           <button
-            className={` min-w-[120px] text-2xl focus:outline-none relative ${
+            className={` lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
               activeTab === 6 ? "text-primary-green font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(6)}
@@ -90,7 +96,7 @@ const ConsellingPlatform = () => {
         </div>
         {activeTab === 1 && (
           <div
-            className="w-full mt-16 min-h-[600px] rounded border-2 border-secondary-sky"
+            className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
             <img
@@ -103,7 +109,7 @@ const ConsellingPlatform = () => {
         )}
         {activeTab === 2 && (
           <div
-            className="w-full mt-16 min-h-[600px] rounded border-2 border-secondary-sky"
+            className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
             <img
@@ -116,7 +122,7 @@ const ConsellingPlatform = () => {
         )}
         {activeTab === 3 && (
           <div
-            className="w-full mt-16 min-h-[600px] rounded border-2 border-secondary-sky"
+            className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
             <img
@@ -129,7 +135,7 @@ const ConsellingPlatform = () => {
         )}
         {activeTab === 4 && (
           <div
-            className="w-full mt-16 min-h-[600px] rounded border-2 border-secondary-sky"
+            className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
             <img
@@ -142,7 +148,7 @@ const ConsellingPlatform = () => {
         )}
         {activeTab === 5 && (
           <div
-            className="w-full mt-16 min-h-[600px] rounded border-2 border-secondary-sky"
+            className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
             <img
@@ -155,7 +161,7 @@ const ConsellingPlatform = () => {
         )}
         {activeTab === 6 && (
           <div
-            className="w-full mt-16 min-h-[600px] rounded border-2 border-secondary-sky"
+            className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
             <img

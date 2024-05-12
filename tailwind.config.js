@@ -15,6 +15,9 @@ export default {
         "blue-550": "#b0ddff",
         "red-550": "#FFACAC",
       },
+      screens: {
+        mmd: "928px",
+      },
     },
   },
   plugins: [],

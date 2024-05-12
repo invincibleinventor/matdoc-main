@@ -6,8 +6,7 @@
   border: none;
 }
 .PhoneInputInput:focus {
- outline: none;
-
+  outline: none;
 }
 .PhoneInputCountrySelect {
   width: 52px;
@@ -30,4 +29,9 @@
   border-right-width: 2px !important;
   border-bottom-width: 2px !important;
   border-color: #fff !important;
+}
+@media screen and (max-width: 639px) {
+  .PhoneInputInput {
+    font-size: 13px;
+  }
 }

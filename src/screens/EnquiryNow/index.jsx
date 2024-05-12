@@ -30,19 +30,19 @@ const EnquiryNow = () => {
         <title>Enquiry Form - MAT DOC</title>
       </Helmet>
       ;
-      <section className="w-full py-20 ">
+      <section className="w-full py-10 lg:py-20 ">
         <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
           <h2 className="text-center text-white " data-aos="fade-up">
             Your medical dreams are now <br className="hidden lg:block" />{" "}
             simplified with MAT DOC!
           </h2>
           <div
-            className="flex flex-wrap justify-between w-full mt-12 gap-y-7"
+            className="flex flex-wrap justify-between w-full mt-10 lg:mt-12 gap-y-7"
             data-aos="fade-up"
           >
             {data.map((item) => (
               <div
-                className="w-[32%] px-8 py-12 text-white rounded  HomeCards "
+                className="w-full sm:w-[48%] lg:w-[32%] px-5 md:px-8 py-8 md:py-12 text-white rounded  HomeCards "
                 key={item.id}
               >
                 <p className="text-xl font-medium leading-8 text-white">
@@ -52,7 +52,7 @@ const EnquiryNow = () => {
             ))}
           </div>
           <h3
-            className="mt-12 mb-5 text-3xl text-center text-white"
+            className="mt-10 mb-5 text-3xl text-center text-white lg:mt-12"
             data-aos="fade-up"
           >
             Let's get started

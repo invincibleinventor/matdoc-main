@@ -1,4 +1,3 @@
-import { MoveRight } from "lucide-react";
 import Button from "./button";
 
 const Form = () => {
@@ -8,43 +7,45 @@ const Form = () => {
         className="flex flex-wrap items-center justify-between w-full gap-y-6"
         data-aos="fade-up"
       >
-        <div className="w-[48%]">
-          <label className="text-xl text-white">Full name</label>
+        <div className="w-full md:w-[48%]">
+          <label className="text-lg text-white md:text-xl">Full name</label>
           <input
             type="text"
             placeholder="Enter your name"
-            className="w-full p-3 mt-2 text-xl text-gray-400 bg-transparent border border-gray-700 rounded outline-none placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
+            className="w-full p-3 mt-2 text-base text-gray-400 bg-transparent border border-gray-700 rounded outline-none sm:text-lg md:text-xl placeholder:text-base sm:placeholder:text-lg md:placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
           />
         </div>
-        <div className="w-[48%]">
-          <label className="text-xl text-white">Email Address</label>
+        <div className="w-full md:w-[48%]">
+          <label className="text-lg text-white md:text-xl">Email Address</label>
           <input
             type="text"
             placeholder="Enter your email"
-            className="w-full p-3 mt-2 text-xl text-gray-400 bg-transparent border border-gray-700 rounded outline-none placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
+            className="w-full p-3 mt-2 text-base text-gray-400 bg-transparent border border-gray-700 rounded outline-none sm:text-lg md:text-xl placeholder:text-base sm:placeholder:text-lg md:placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
           />
         </div>
-        <div className="w-[48%]">
-          <label className="text-xl text-white">Mobile Number</label>
+        <div className="w-full md:w-[48%]">
+          <label className="text-lg text-white md:text-xl">Mobile Number</label>
           <input
             type="number"
             placeholder="Enter your number"
-            className="w-full p-3 mt-2 text-xl text-gray-400 bg-transparent border border-gray-700 rounded outline-none placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
+            className="w-full p-3 mt-2 text-base text-gray-400 bg-transparent border border-gray-700 rounded outline-none sm:text-lg md:text-xl placeholder:text-base sm:placeholder:text-lg md:placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
           />
         </div>
-        <div className="w-[48%]">
-          <label className="text-xl text-white">Town / City</label>
+        <div className="w-full md:w-[48%]">
+          <label className="text-lg text-white md:text-xl">Town / City</label>
           <input
             type="text"
             placeholder="Enter your town / city"
-            className="w-full p-3 mt-2 text-xl text-gray-400 bg-transparent border border-gray-700 rounded outline-none placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
+            className="w-full p-3 mt-2 text-base text-gray-400 bg-transparent border border-gray-700 rounded outline-none sm:text-lg md:text-xl placeholder:text-base sm:placeholder:text-lg md:placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
           />
         </div>
-        <div className="w-[48%]">
-          <label className="text-xl text-white">Course Interested In </label>
+        <div className="w-full md:w-[48%]">
+          <label className="text-lg text-white md:text-xl">
+            Course Interested In{" "}
+          </label>
           <select
             placeholder="Enter your town / city"
-            className="w-full p-3 mt-2 text-xl text-gray-400 bg-transparent border border-gray-700 rounded outline-none placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
+            className="w-full p-3 mt-2 text-base text-gray-400 bg-transparent border border-gray-700 rounded outline-none sm:text-lg md:text-xl placeholder:text-base sm:placeholder:text-lg md:placeholder:text-xl focus:outline-none placeholder:text-gray-400 "
           >
             <option selected="selected" disabled="true">
               Please Select

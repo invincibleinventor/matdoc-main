@@ -2,9 +2,12 @@ import { Assets } from "../../assets/Assets";
 
 const Banner = () => {
   return (
-    <section className="w-full py-20 ">
+    <section className="w-full py-10 lg:py-20 ">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
-        <p className="text-sm text-center text-white" data-aos="fade-up">
+        <p
+          className="text-sm text-center text-white md:text-base"
+          data-aos="fade-up"
+        >
           JOIN US IN SHAPING THE FUTURE OF EDUCATION AND TECHNOLOGY
         </p>
         <h2 className="mt-5 text-center text-white " data-aos="fade-up">

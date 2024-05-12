@@ -115,7 +115,7 @@ const Navbar = () => {
               src={Assets.MatDoc}
               alt="Mat Doc"
               title="Mat Doc"
-              className="max-w-[110px] md:max-w-[170px] md:max-h-20 relative z-50 w-fit object-contain bg-blend-overlay cursor-pointer hover:scale-95  duration-500 ease-in-out"
+              className="max-w-[110px] md:max-w-[150px] xl:max-w-[170px] md:max-h-20 relative z-50 w-fit object-contain bg-blend-overlay cursor-pointer hover:scale-95  duration-500 ease-in-out"
             />
           </Link>
         </div>
@@ -126,7 +126,7 @@ const Navbar = () => {
                 {menu.id == 1 ? (
                   <a
                     href={menu.link}
-                    className="flex items-center justify-start text-xl font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
+                    className="flex items-center justify-start text-base font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
                     rel="canonical"
                   >
                     {menu.name}
@@ -134,7 +134,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={menu.link}
-                    className="flex items-center justify-start text-xl font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
+                    className="flex items-center justify-start text-base font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
                     rel="canonical"
                     onClick={() => toggleSubmenu(menu.id)}
                   >
@@ -185,7 +185,7 @@ const Navbar = () => {
                 to="/auth/login"
                 rel="canonical"
                 target="_blank"
-                className="flex items-center justify-center px-5 py-2 text-base text-black bg-white rounded cursor-pointer"
+                className="flex items-center justify-center px-3 py-2 text-base text-black bg-white rounded cursor-pointer xl:px-5"
               >
                 {" "}
                 Sign in / Sign up

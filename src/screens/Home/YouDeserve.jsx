@@ -1,15 +1,16 @@
-import { MoveRight } from "lucide-react";
 import Button from "../../components/Atoms/button";
 
 const YouDeserve = () => {
   return (
-    <section className="w-full py-20 ">
+    <section className="w-full py-10 lg:py-20 ">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
         <div
-          className="px-10 py-20 border rounded bg-primary-brown border-secondary-sky "
+          className="p-5 py-10 border rounded md:px-10 md:py-16 mmd:py-20 bg-primary-brown border-secondary-sky "
           data-aos="fade-up"
         >
-          <p className="text-sm text-center text-black">GET STARTED NOW</p>
+          <p className="text-sm text-center text-black md:text-base">
+            GET STARTED NOW
+          </p>
           <h2 className="mt-1 mb-5 text-center text-black">
             Get the best seat that you deserve
           </h2>

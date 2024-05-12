@@ -143,3 +143,41 @@ ul li {
 .swiper-button-next::after {
   font-size: 22px !important;
 }
+
+@media screen and (max-width: 1023px) {
+  h1 {
+  font-size: 54px;
+  line-height: 70px;
+}
+h2 {
+  font-size: 40px;
+  line-height: 54px;
+}
+}
+@media screen and (max-width: 767px) {
+  h1 {
+  font-size: 44px;
+  line-height: 54px;
+}
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+ html:not(.no-js) [data-aos^="fade"][data-aos^="fade"] {
+    opacity: 1 !important;
+  }
+
+  html:not(.no-js) [data-aos="fade-up"] {
+    transform: none !important;
+  }
+}
+@media screen and (max-width: 639px) {
+  h1 {
+  font-size: 40px;
+  line-height: 54px;
+}h2 {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+}

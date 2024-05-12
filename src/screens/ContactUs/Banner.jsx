@@ -23,9 +23,12 @@ const Banner = () => {
     },
   ];
   return (
-    <section className="w-full py-20 ">
+    <section className="w-full py-10 lg:py-20 ">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
-        <p className="text-sm text-center text-white" data-aos="fade-up">
+        <p
+          className="text-sm text-center text-white md:text-base"
+          data-aos="fade-up"
+        >
           QUESTIONS?
         </p>
         <h2 className="mt-5 text-center text-white " data-aos="fade-up">
@@ -34,10 +37,10 @@ const Banner = () => {
         <p className="mt-5 text-xl text-center text-white" data-aos="fade-up">
           Reach out to us through any of the ways below{" "}
         </p>
-        <div className="flex justify-between w-full mx-auto mt-16 ">
+        <div className="flex flex-wrap justify-between w-full mx-auto mt-10 lg:mt-16 ">
           {data.map((item) => (
             <div
-              className={`w-[47%] ${item.bgColor} border-secondary-sky border-2 rounded p-12 min-h-[350px] flex justify-center items-center flex-col`}
+              className={`w-full md:mt-0 mt-5 sm:w-[47%] ${item.bgColor} border-secondary-sky border-2 rounded p-5 md:p-12 min-h-auto md:min-h-[350px] flex justify-center items-center flex-col`}
               data-aos="fade-up"
               key={item.id}
             >
@@ -47,7 +50,7 @@ const Banner = () => {
               <p className="mt-5 text-lg text-center ">{item.desc}</p>
               <Link
                 to={item.link}
-                className="flex items-center justify-center px-8 py-3 mx-auto mt-6 text-xl font-semibold text-white bg-black rounded cursor-pointer w-fit text-primary-black"
+                className="flex items-center justify-center px-3 py-3 mx-auto mt-6 text-base font-semibold text-white bg-black rounded cursor-pointer md:text-xl md:px-8 w-fit text-primary-black"
               >
                 {item.icon}
                 {item.linkText}

@@ -33,10 +33,13 @@ const CompetitiveEdge = () => {
     },
   ];
   return (
-    <section className="w-full py-20 ">
+    <section className="w-full py-10 lg:py-20 ">
       <div className="px-5 mx-auto lg:container xl:max-w-screen-xl ">
-        <div className="p-10 rounded bg-secondary-sky">
-          <p className="text-sm text-center text-black" data-aos="fade-up">
+        <div className="p-5 rounded md:p-10 bg-secondary-sky">
+          <p
+            className="text-sm text-center text-black md:text-base"
+            data-aos="fade-up"
+          >
             THE MAT DOC IMPACT
           </p>
           <h2 className="mt-1 mb-5 text-center text-black" data-aos="fade-up">
@@ -47,13 +50,19 @@ const CompetitiveEdge = () => {
             Here's how the MAT DOC Platform enhances your chances of securing a
             better medical seat
           </p>
-          <div className="flex justify-between w-full mt-14" data-aos="fade-up">
+          <div
+            className="flex flex-wrap justify-between w-full mt-10 gap-y-10 lg:mt-14"
+            data-aos="fade-up"
+          >
             {data.map((item) => (
-              <div className="w-[25%]  " key={item.id}>
+              <div
+                className="w-full sm:w-[48%] md:w-[31%] mmd:w-[30%] lg:w-[25%]  "
+                key={item.id}
+              >
                 <p className="text-sm font-semibold text-black">{item.para}</p>
-                <h2 className="text-black text-7xl">
+                <h2 className="text-3xl text-black sm:text-4xl md:text-5xl mmd:text-6xl lg:text-7xl">
                   {item.title}
-                  <span className="text-3xl">{item.subTitle}</span>
+                  <span className="text-2xl md:text-3xl">{item.subTitle}</span>
                 </h2>
                 <h4 className="mt-5 text-2xl font-medium text-black">
                   {item.heading}

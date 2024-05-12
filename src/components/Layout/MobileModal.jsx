@@ -66,7 +66,7 @@ const MobileModal = ({ isActive, onClose }) => {
     {
       id: 4,
       title: "Blogs",
-      link: "#",
+      link: "/blog",
     },
     {
       id: 5,
@@ -82,6 +82,11 @@ const MobileModal = ({ isActive, onClose }) => {
       id: 7,
       title: "Enquire Now",
       link: "/enquiry-form",
+    },
+    {
+      id: 8,
+      title: "Sign In / Sign Up",
+      link: "/auth/login",
     },
   ];
   return (

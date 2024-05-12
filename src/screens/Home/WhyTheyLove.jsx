@@ -35,9 +35,9 @@ const WhyTheyLove = () => {
     },
   ];
   return (
-    <section className="relative z-40 w-full pt-12 pb-10 bg-black">
+    <section className="relative z-40 w-full pt-10 pb-10 bg-black lg:pt-12">
       <div className="relative px-5 mx-auto lg:container xl:max-w-screen-xl">
-        <p className="text-sm text-white" data-aos="fade-up">
+        <p className="text-sm text-white md:text-base" data-aos="fade-up">
           ASK OUR USERS
         </p>
         <h2 className="mt-1 mb-5 text-white" data-aos="fade-up">
@@ -45,7 +45,7 @@ const WhyTheyLove = () => {
         </h2>
         <Swiper
           spaceBetween={20}
-          className="pt-20 mt-12 mySwiper"
+          className="pt-20 mt-6 md:mt-12 mySwiper"
           loop={true}
           autoplay={{
             delay: 2500,
@@ -76,9 +76,9 @@ const WhyTheyLove = () => {
           {data.map((item) => (
             <SwiperSlide
               key={item.id}
-              className="border rounded border-secondary-sky min-h-[320px] h-full p-8  max-h-[320px]  cursor-grab"
+              className="border rounded border-secondary-sky min-h-[320px] h-full p-5 md:p-8  max-h-[320px]  cursor-grab"
             >
-              <div className="min-h-[200px]">
+              <div className="min-h-[165px] md:min-h-[200px]">
                 <p className="text-xl text-white line-clamp-5">{item.para}</p>
               </div>
               <div className="flex items-center justify-start mt-5 text-white ">
