@@ -27,9 +27,7 @@ function App() {
       disable: window.innerWidth < 768,
     });
   }, []);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+
   const isLoginPage = window.location.pathname === "/auth/login";
   return (
     <>
