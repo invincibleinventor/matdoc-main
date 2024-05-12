@@ -183,7 +183,6 @@ const Navbar = () => {
             <li>
               <Link
                 to="/auth/login"
-                target="_blank"
                 className="flex items-center justify-center px-5 py-2 text-base text-black bg-white rounded cursor-pointer"
               >
                 {" "}
