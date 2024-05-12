@@ -181,13 +181,13 @@ const Navbar = () => {
         <div className="w-[17%] flex justify-end items-center ">
           <ul className="items-center justify-end hidden ml-4 lg:flex">
             <li>
-              <a
-                href="/auth/login"
+              <Link
+                to="/auth/login"
                 className="flex items-center justify-center px-5 py-2 text-base text-black bg-white rounded cursor-pointer"
               >
                 {" "}
                 Sign in / Sign up
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="flex items-center justify-end lg:hidden">
