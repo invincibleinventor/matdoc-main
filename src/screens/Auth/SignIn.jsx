@@ -5,6 +5,7 @@ import { useState } from "react";
 import Button from "../../components/Atoms/button";
 import { MessageCircleMore } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
   const [value, setValue] = useState();
@@ -12,7 +13,7 @@ const SignIn = () => {
     <section className="flex items-center justify-center w-full h-screen bg-black">
       <div className="w-full px-5 mx-auto lg:container xl:max-w-screen-xl ">
         <div className="max-w-[540px] shadow-2xl mx-auto w-full border-2 border-gray-700  rounded px-10 py-14  ">
-          <a href="/" className="w-fit max-w-[180px] " target="_blank">
+          <a href="/" className="w-fit max-w-[180px] ">
             <img
               src={Assets.MatDoc}
               alt="MatDoc"
@@ -53,7 +54,6 @@ const SignIn = () => {
               Trouble signing in?
               <a
                 href="/contact-us"
-                target="_blank"
                 className="ml-2 font-medium underline underline-offset-3 text-primary-brown "
               >
                 Get Help
