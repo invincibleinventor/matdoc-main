@@ -47,8 +47,26 @@ import Round02 from "./Resources/NeetUGCounsellingDate/02.png";
 import Round03 from "./Resources/NeetUGCounsellingDate/03.png";
 import Round04 from "./Resources/NeetUGCounsellingDate/04.png";
 import MccWeb from "./Resources/NeetUGCounsellingDate/mcc-web-zy.png";
+import NeetCutOffApplicants from "./Resources/NeetCutOff/Applicants-illustration.png";
+import NeetCutOffAvailability from "./Resources/NeetCutOff/Availability-illlustration.png";
+import NeetCutOffCategory from "./Resources/NeetCutOff/Category-illustration.png";
+import NeetCutOffExam from "./Resources/NeetCutOff/exam-illustration.png";
+import NeetCutOffTrends from "./Resources/NeetCutOff/trends-illustration.png";
+import AFMC from "./Resources/NeetCutOff/afmc-illustration.png";
+import AIIMS from "./Resources/NeetCutOff/aiims-illustration.png";
+import CMC from "./Resources/NeetCutOff/cmc-illustration.png";
+import MAMC from "./Resources/NeetCutOff/mamc-illustration.png";
 
 export const Assets = {
+  AFMC,
+  AIIMS,
+  CMC,
+  MAMC,
+  NeetCutOffTrends,
+  NeetCutOffExam,
+  NeetCutOffCategory,
+  NeetCutOffAvailability,
+  NeetCutOffApplicants,
   MccWeb,
   Round01,
   Round02,
