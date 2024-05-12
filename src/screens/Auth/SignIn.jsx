@@ -12,7 +12,7 @@ const SignIn = () => {
   return (
     <section className="flex items-center justify-center w-full h-screen bg-black">
       <div className="w-full px-5 mx-auto lg:container xl:max-w-screen-xl ">
-        <div className="max-w-[540px] mx-auto w-full border-2 border-gray-700  rounded px-10 py-14  ">
+        <div className="max-w-[540px] shadow-2xl mx-auto w-full border-2 border-gray-700  rounded px-10 py-14  ">
           <a href="/" className="w-fit max-w-[180px] " target="_blank">
             <img
               src={Assets.MatDoc}
@@ -33,16 +33,16 @@ const SignIn = () => {
               defaultCountry="US"
               value={value}
               onChange={setValue}
-              className="w-full pl-3 mt-5 border-2 border-gray-700 rounded"
+              className="w-full pl-3 mt-6 border-2 border-gray-700 rounded"
             />
             <Button
               text="Send OTP via SMS"
-              classes="w-full common-btn blue mt-5 text-lg h-11"
+              classes="w-full common-btn blue mt-6 text-lg h-11"
               icon={<MessageCircleMore size={25} className="mr-3" />}
             />
             <Button
               text="Send OTP to WhatsApp"
-              classes="w-full border border-green-500 hover:bg-green-500 group hover:text-white duration-300 ease-in-out  text-green-500 rounded flex items-center justify-center   mt-5 text-lg h-11"
+              classes="w-full border border-green-500 hover:bg-green-500 group hover:text-white duration-300 ease-in-out  text-green-500 rounded flex items-center justify-center   mt-6 text-lg h-11"
               icon={
                 <FaWhatsapp
                   size={25}
