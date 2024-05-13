@@ -179,5 +179,8 @@ h2 {
   font-size: 26px;
   line-height: 36px;
 }
-
+p,
+ul li {
+  font-size: 18px !important;
+}
 }
