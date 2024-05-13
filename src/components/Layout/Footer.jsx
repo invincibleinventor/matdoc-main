@@ -151,7 +151,7 @@ const Footer = () => {
       </section>
       <section className="w-full bg-black ">
         <div className="flex items-center justify-center px-5 py-6 mx-auto xl:max-w-screen-xl lg:container">
-          <p className="text-sm font-normal text-center text-white">
+          <p className="!text-sm font-normal text-center text-white">
             © 2024 MAT &amp; MAT DOC Labs Private Limited
           </p>
         </div>
