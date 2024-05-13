@@ -12,20 +12,20 @@ const NEETSelection = () => {
           conducted by the MCC and consists of four rounds:
         </p>
         <ul className="mt-5 ml-5 list-decimal">
-          <li className="pl-3 mt-3 text-2xl font-bold text-white first:mt-0">
+          <li className="pl-3 mt-3 text-lg font-bold text-white sm:text-xl md:text-2xl first:mt-0">
             All India Round-1{" "}
           </li>
-          <li className="pl-3 mt-3 text-2xl font-bold text-white first:mt-0">
+          <li className="pl-3 mt-3 text-lg font-bold text-white sm:text-xl md:text-2xl first:mt-0">
             All India Round-2
           </li>
-          <li className="pl-3 mt-3 text-2xl font-bold text-white first:mt-0">
+          <li className="pl-3 mt-3 text-lg font-bold text-white sm:text-xl md:text-2xl first:mt-0">
             All India Round-3
           </li>
-          <li className="pl-3 mt-3 text-2xl font-bold text-white first:mt-0">
+          <li className="pl-3 mt-3 text-lg font-bold text-white sm:text-xl md:text-2xl first:mt-0">
             All India Stray Vacancy Round
           </li>
         </ul>
-        <p className="mt-5 text-xl text-white">
+        <p className="mt-5 text-lg text-white sm:text-xl">
           While the MCC administers counselling for 15% of All India Quota seats
           and 100% of deemed university seats over four rounds, qualified NEET
           candidates are only eligible to participate in All India rounds 1, 2,
@@ -34,7 +34,7 @@ const NEETSelection = () => {
           seats, facilitating admissions to government and private
           medical/dental colleges.
         </p>
-        <p className="mt-5 text-xl text-white">
+        <p className="mt-5 text-lg text-white sm:text-xl">
           During the counselling process, applicants are required to complete an
           online form to select their preferred college options. Seats are
           subsequently allocated to candidates based on their rank and seat

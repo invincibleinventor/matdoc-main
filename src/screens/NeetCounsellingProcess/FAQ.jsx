@@ -67,21 +67,25 @@ const Frequently = () => {
       title: "What is the reservation policy in NEET?",
       content: (
         <div>
-          <p>
+          <p className="text-base sm:text-lg">
             NEET seat allotment follows the reservation policy as per the norms
             of the Government of India and respective state governments. There
             are lots of reserved categories in NEET such as:
           </p>
-          <ul className="mt-5 ml-5 list-decimal">
-            <li className="pl-3 mt-2 first:mt-0">Scheduled Castes (SC)</li>
-            <li className="pl-3 mt-2 first:mt-0">Scheduled Tribes (ST)</li>
-            <li className="pl-3 mt-2 first:mt-0">
+          <ul className="mt-5 ml-5 text-base list-decimal sm:text-lg">
+            <li className="pl-3 mt-2 text-base sm:text-lg first:mt-0">
+              Scheduled Castes (SC)
+            </li>
+            <li className="pl-3 mt-2 text-base sm:text-lg first:mt-0">
+              Scheduled Tribes (ST)
+            </li>
+            <li className="pl-3 mt-2 text-base sm:text-lg first:mt-0">
               Other Backward Classes (OBC)
             </li>
-            <li className="pl-3 mt-2 first:mt-0">
+            <li className="pl-3 mt-2 text-base sm:text-lg first:mt-0">
               Economically Weaker Sections (EWS)
             </li>
-            <li className="pl-3 mt-2 first:mt-0">
+            <li className="pl-3 mt-2 text-base sm:text-lg first:mt-0">
               Persons with Disabilities (PwD)
             </li>
           </ul>
@@ -90,7 +94,7 @@ const Frequently = () => {
     },
   ];
   return (
-    <section className="w-full py-16 bg-black ">
+    <section className="w-full py-10 bg-black lg:py-16 ">
       <div
         className="w-full px-5 mx-auto lg:container xl:max-w-screen-xl"
         data-aos="fade-up"
@@ -99,7 +103,7 @@ const Frequently = () => {
           Frequently Asked Questions by the <br className="hidden lg:block" />
           students
         </h2>
-        <div className="w-full mt-14">
+        <div className="w-full mt-10 lg:mt-14">
           {items.map((item, index) => (
             <div
               key={index}
@@ -109,15 +113,17 @@ const Frequently = () => {
                 className="flex items-center justify-between cursor-pointer"
                 onClick={() => toggleAccordion(index)}
               >
-                <div className="text-xl font-semibold ">{item.title}</div>
-                <div className="text-2xl font-semibold ">
+                <div className="text-lg font-semibold sm:text-xl ">
+                  {item.title}
+                </div>
+                <div className="text-xl font-semibold md:text-2xl ">
                   {openIndex === index ? "-" : "+"}
                 </div>
               </div>
               <div
-                className={` overflow-hidden duration-500 transition  text-lg   ease-in-out ${
+                className={` overflow-hidden duration-500 transition text-base  sm:text-lg   ease-in-out ${
                   openIndex === index
-                    ? "open h-auto mt-3 border-t border-secondary-sky pt-3 pl-3 pb-2"
+                    ? "open h-auto mt-3 border-t border-secondary-sky pt-3 sm:pl-3 pb-2"
                     : "closed h-0"
                 }`}
               >

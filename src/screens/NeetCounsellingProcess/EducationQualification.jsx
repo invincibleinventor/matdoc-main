@@ -7,7 +7,7 @@ const EducationQualification = ({
   educationdescription,
 }) => {
   return (
-    <section className="w-full py-16 bg-black ">
+    <section className="w-full py-10 bg-black lg:py-16 ">
       <div
         className="w-full px-5 mx-auto lg:container xl:max-w-screen-xl"
         data-aos="fade-up"
@@ -18,11 +18,11 @@ const EducationQualification = ({
             {educationdescription}
           </p>
         )}
-        <div className="flex flex-wrap justify-between w-full mt-16 gap-y-10 ">
+        <div className="flex flex-wrap justify-between w-full mt-10 lg:mt-16 gap-y-10 ">
           {educationData &&
             educationData.map((data) => (
               <div
-                className="w-[31%] pt-9 px-7 pb-7 text-white bg-[#18181B] group transition duration-300 ease-in-out shadow-cards rounded "
+                className="w-full sm:w-[48%] mmd:w-[31%] pt-7 md:pt-9 px-5 md:px-6 mmd:px-7 pb-7 text-white bg-[#18181B] group transition duration-300 ease-in-out shadow-cards rounded "
                 key={data.id}
               >
                 <div className="flex items-center justify-center w-10 h-10 text-white transition duration-300 ease-in-out border border-gray-500 rounded group-hover:bg-primary-brown ">

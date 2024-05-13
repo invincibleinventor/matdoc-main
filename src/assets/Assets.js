@@ -35,6 +35,7 @@ import Placement from "./Resources/TopCollegesForNeet/placement-illustration.png
 import Rankings from "./Resources/TopCollegesForNeet/rankings-illustration.png";
 import Recognition from "./Resources/TopCollegesForNeet/recognition-illustration.png";
 import NEETProcessWeb from "./Resources/NeetCounsellingProcess/flow-web-zy.png";
+import NEETProcessMobile from "./Resources/NeetCounsellingProcess/flow-mobile-zy.png";
 import DoctorPost from "./Resources/NeetCounsellingProcess/doctors.png";
 import ChoiceFilling from "./Resources/NeetUGCounsellingDate/Choice Filling-illustration.png";
 import Fee from "./Resources/NeetUGCounsellingDate/Fee-illustration.png";
@@ -59,6 +60,7 @@ import MAMC from "./Resources/NeetCutOff/mamc-illustration.png";
 import BlogFirst from "./Blogs/blogFirst.jpg";
 
 export const Assets = {
+  NEETProcessMobile,
   BlogFirst,
   AFMC,
   AIIMS,

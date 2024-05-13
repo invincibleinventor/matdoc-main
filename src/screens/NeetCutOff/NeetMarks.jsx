@@ -68,10 +68,10 @@ const NeetMarks = () => {
         className="w-full px-5 mx-auto lg:container xl:max-w-screen-xl"
         data-aos="fade-up"
       >
-        <div className="w-[45%] mx-auto rounded border-2 border-gray-400 bg-orange-550 p-7 ">
+        <div className="w-full md:w-[60%] mmd:w-[55%] lg:w-1/2 xl:w-[45%] mx-auto rounded border-2 border-gray-400 bg-orange-550 p-5 sm:p-6 md:p-7 ">
           <ul className="">
             {data.map((item, index) => (
-              <li className="mt-5 text-2xl first:mt-0" key={index}>
+              <li className="mt-5 text-xl md:text-2xl first:mt-0" key={index}>
                 {item.desc}
               </li>
             ))}

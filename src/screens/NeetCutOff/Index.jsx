@@ -147,26 +147,26 @@ const NeetCutOff = () => {
       id: 1,
       desc: (
         <>
-          <ul className="ml-5 list-disc">
-            <li className="pl-3 mt-3 first:mt-0 ">
+          <ul className="ml-3 list-disc md:ml-5">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               To get an idea of the NEET cut-off 2024, it is helpful to look at
               the cut-off marks from previous years. While the cut-off marks can
               vary each year, analyzing the trends can provide valuable
               insights.
             </li>
-            <li className="pl-3 mt-3 first:mt-0 ">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               In 2023, the NEET cut-off marks for the General category were 137
               out of 720, while for OBC, SC, and ST categories, it was 107 out
               of 720. These marks give an indication of the minimum scores
               required for different categories.
             </li>
-            <li className="pl-3 mt-3 first:mt-0 ">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               The cut-off marks for the ST category can be around 75 to 100
               marks lower than the General category. For example, if the General
               category cut-off marks are 675, the ST category may have a cut-off
               of around 575-600.
             </li>
-            <li className="pl-3 mt-3 first:mt-0 ">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               It is important to note that these cut-off marks are based on the
               All India Quota seats and may vary for state-level and private
               medical colleges. It is advisable to check the official websites
@@ -197,28 +197,28 @@ const NeetCutOff = () => {
       id: 1,
       desc: (
         <>
-          <ul className="ml-5 list-disc">
-            <li className="pl-3 mt-3 first:mt-0 ">
+          <ul className="ml-3 list-disc md:ml-5">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               Determine the total number of questions answered correctly by a
               candidate.
             </li>
-            <li className="pl-3 mt-3 first:mt-0 ">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               Multiply the number of correct answers by the marks assigned to
               each question (4 marks each).
             </li>
-            <li className="pl-3 mt-3 first:mt-0 ">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               Deduct the negative marks for incorrect answers. For each
               incorrect answer, deduct 1 mark.
             </li>
-            <li className="pl-3 mt-3 first:mt-0 ">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               The final score obtained is the candidate's NEET score.
             </li>
-            <li className="pl-3 mt-3 first:mt-0 ">
+            <li className="pl-1.5 mt-3 md:pl-3 first:mt-0 ">
               Compare the NEET score with the cut-off marks to determine
               eligibility.
             </li>
           </ul>
-          <div className="w-[90%] mx-auto bg-gray-800 rounded text-lg text-white py-2 px-3 mt-5">
+          <div className="w-full mmd:w-[90%] mx-auto bg-gray-800 rounded text-base md:text-lg text-white py-2 px-3 mt-5">
             For example, if a candidate answers 150 questions correctly out of
             180 and has 30 incorrect answers, the calculation would be as
             follows

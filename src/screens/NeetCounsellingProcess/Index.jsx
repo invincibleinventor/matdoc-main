@@ -246,7 +246,8 @@ const NeetCounsellingProcess = () => {
   // Neet Process
 
   const NeetProcesstitle = <>NEET Process</>;
-  const NeetProcessImg = Assets.NEETProcessWeb;
+  const NeetProcessImg = Assets.NEETProcessWebNEETProcessWeb;
+  const NeetProcessImgMobile = Assets.NEETProcessMobile;
 
   return (
     <>
@@ -277,6 +278,7 @@ const NeetCounsellingProcess = () => {
       />
       <NeetProcess
         NeetProcessImg={NeetProcessImg}
+        NeetProcessImgMobile={NeetProcessImgMobile}
         NeetProcesstitle={NeetProcesstitle}
       />
       <PostDeclaration />
