@@ -115,7 +115,7 @@ const Navbar = () => {
               src={Assets.MatDoc}
               alt="Mat Doc"
               title="Mat Doc"
-              className="max-w-[110px] md:max-w-[150px] xl:max-w-[170px] md:max-h-20 relative z-50 w-fit object-contain bg-blend-overlay cursor-pointer hover:scale-95  duration-500 ease-in-out"
+              className="max-w-[130px] md:max-w-[150px] xl:max-w-[170px] md:max-h-20 relative z-50 w-fit object-contain bg-blend-overlay cursor-pointer hover:scale-95  duration-500 ease-in-out"
             />
           </Link>
         </div>
