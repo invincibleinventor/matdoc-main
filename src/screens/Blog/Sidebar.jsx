@@ -58,38 +58,42 @@ const Sidebar = () => {
   ];
   return (
     <section className="w-full">
-      <div className="bg-gray-900 rounded p-7 ">
+      <div className="p-5 bg-gray-900 rounded xl:p-7 ">
         <div className="relative w-full">
           <input
             type="search"
             placeholder="Search here...."
-            className="w-full py-3 pl-4 pr-8 text-lg text-gray-300 placeholder-gray-300 bg-transparent border border-gray-700 rounded outline-none "
+            className="w-full py-3 pl-4 pr-8 text-sm text-gray-300 placeholder-gray-300 bg-transparent border border-gray-700 rounded outline-none md:text-lg "
           />
           <Search className="absolute text-gray-300 -translate-y-1/2 top-1/2 right-3" />
         </div>
       </div>
-      <div className="py-10 bg-gray-900 rounded mt-7 px-7">
+      <div className="px-5 py-10 bg-gray-900 rounded mt-7 xl:px-7">
         <h3 className="text-2xl text-white">Recent Posts</h3>
         <ul className="mt-5 font-normal leading-8 text-white">
           {data.map((item, index) => (
             <li
-              className="pb-3 mt-3 text-lg border-b border-gray-600 first:mt-0 last:border-none last:pb-0 line-clamp-3"
+              className="pb-3 mt-3 overflow-hidden text-base border-b border-gray-600 md:text-lg first:mt-0 last:border-none last:pb-0 "
               key={index}
             >
-              {item.desc}
+              <p className="line-clamp-3 text-ellipsis"> {item.desc}</p>
             </li>
           ))}
         </ul>
       </div>
-      <div className="py-10 bg-gray-900 rounded mt-7 px-7">
+      <div className="px-5 py-10 bg-gray-900 rounded mt-7 xl:px-7">
         <h3 className="text-2xl text-white">Categories</h3>
         <ul className="mt-5 font-normal leading-8 text-white">
           {categories.map((item, index) => (
             <li
-              className="flex items-center justify-between pb-3 mt-3 border-b border-gray-600 first:mt-0 last:border-none last:pb-0 line-clamp-3"
+              className="flex items-center justify-between pb-3 mt-3 border-b border-gray-600 first:mt-0 last:border-none last:pb-0 "
               key={index}
             >
-              <p className="text-lg"> {item.title} </p> {item.count}
+              <p className="overflow-hidden text-base md:text-lg line-clamp-3">
+                {" "}
+                {item.title}{" "}
+              </p>{" "}
+              {item.count}
             </li>
           ))}
         </ul>

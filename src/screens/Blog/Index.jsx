@@ -38,9 +38,9 @@ const Blog = () => {
     },
   ];
   return (
-    <section className="w-full py-20 bg-black">
-      <div className="flex justify-between w-full px-5 mx-auto lg:container xl:max-w-screen-xl ">
-        <div className="w-[69%]">
+    <section className="w-full py-10 bg-black mmd:py-20">
+      <div className="flex flex-wrap-reverse justify-between w-full px-5 mx-auto lg:container xl:max-w-screen-xl ">
+        <div className="w-full mmd:w-[69%] mt-10 mmd:mt-0">
           {data.map((item, index) => (
             <div className="w-full mt-16 first:mt-0" key={index}>
               <div className="relative w-full overflow-hidden rounded">
@@ -51,18 +51,20 @@ const Blog = () => {
                   className="w-full duration-300 ease-in-out rounded hover:scale-105 max-h-[470px] "
                 />
               </div>
-              <div className="w-[90%] mx-auto -mt-8 rounded p-7 bg-gray-900 z-20 relative">
-                <h3 className="text-3xl text-white">{item.title}</h3>
-                <div className="flex items-center justify-start mt-3 text-lg text-white">
+              <div className="w-[98%] md:w-[90%] mx-auto -mt-8 rounded p-5 md:p-7 bg-gray-900 z-20 relative">
+                <h3 className="text-xl text-white sm:text-2xl mmd:text-3xl">
+                  {item.title}
+                </h3>
+                <div className="flex items-center justify-start mt-3 text-base text-white md:text-lg">
                   <CalendarDays className="mr-2 text-white" size={22} />
                   {item.date}
                 </div>
-                <p className="my-5 text-lg text-white line-clamp-3">
+                <p className="my-5 text-base text-white md:text-lg line-clamp-3">
                   {item.desc}
                 </p>
                 <Link
                   to="/blog-details"
-                  className="text-xl font-semibold text-white "
+                  className="text-lg font-semibold text-white md:text-xl "
                 >
                   Read More
                 </Link>
@@ -70,7 +72,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
-        <div className="hidden md:block w-[28%] sticky top-28 h-fit overflow-x-hidden mt-10 md:mt-0">
+        <div className="w-full mmd:w-[28%] mmd:sticky mmd:top-28 h-fit overflow-x-hidden ">
           <Sidebar />
         </div>
       </div>
