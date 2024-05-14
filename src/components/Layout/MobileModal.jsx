@@ -83,11 +83,11 @@ const MobileModal = ({ isActive, onClose }) => {
       title: "Enquire Now",
       link: "/enquiry-form",
     },
-    {
-      id: 8,
-      title: "Sign In / Sign Up",
-      link: "/auth/login",
-    },
+    // {
+    //   id: 8,
+    //   title: "Sign In / Sign Up",
+    //   link: "/auth/login",
+    // },
   ];
   return (
     <>

@@ -200,11 +200,22 @@ const Navbar = () => {
                 onClick={() => setMobileModal(false)}
               />
             ) : (
-              <Menu
-                className="text-white"
-                size={30}
-                onClick={() => setMobileModal(true)}
-              />
+              <>
+                <Link
+                  to="/auth/login"
+                  rel="canonical"
+                  target="_blank"
+                  className="flex items-center justify-center text-nowrap px-2 md:px-3 md:text-base md:py-2 py-1.5 text-sm mr-2 text-black bg-white rounded cursor-pointer"
+                >
+                  {" "}
+                  Sign in
+                </Link>
+                <Menu
+                  className="text-white"
+                  size={30}
+                  onClick={() => setMobileModal(true)}
+                />
+              </>
             )}
           </ul>
         </div>
