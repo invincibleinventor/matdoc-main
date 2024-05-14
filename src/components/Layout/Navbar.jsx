@@ -109,7 +109,12 @@ const Navbar = () => {
       }`}
     >
       <div className="relative z-50 flex items-center justify-between px-5 py-3 mx-auto lg:container xl:max-w-screen-xl">
-        <div className="w-[14%]">
+        <div className="w-[60%] mmd:w-[14%] flex justify-start items-center ">
+          <Menu
+            className="mr-2 text-white"
+            size={30}
+            onClick={() => setMobileModal(true)}
+          />
           <Link to="/" rel="canonical">
             <img
               src={Assets.MatDoc}
@@ -120,13 +125,13 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="w-[62%] flex justify-center items-center ">
-          <ul className="items-center justify-center hidden lg:flex gap-x-4 xl:gap-x-7">
+          <ul className="items-center justify-center hidden mmd:flex gap-x-3 lg:gap-x-4 xl:gap-x-7">
             {menuBar.map((menu) => (
               <li className="relative text-base text-white " key={menu.id}>
                 {menu.id == 1 ? (
                   <a
                     href={menu.link}
-                    className="flex items-center justify-start text-base font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
+                    className="flex items-center justify-start text-sm font-medium duration-500 ease-in-out lg:text-base xl:text-lg hover:scale-105"
                     rel="canonical"
                   >
                     {menu.name}
@@ -134,7 +139,7 @@ const Navbar = () => {
                 ) : (
                   <Link
                     to={menu.link}
-                    className="flex items-center justify-start text-base font-medium duration-500 ease-in-out xl:text-lg hover:scale-105"
+                    className="flex items-center justify-start text-sm font-medium duration-500 ease-in-out lg:text-base xl:text-lg hover:scale-105"
                     rel="canonical"
                     onClick={() => toggleSubmenu(menu.id)}
                   >
@@ -165,7 +170,10 @@ const Navbar = () => {
                           rel="canonical"
                           className="block px-8 py-5 rounded hover:bg-slate-800"
                         >
-                          <h3 className="text-2xl"> {subItem.name}</h3>
+                          <h3 className="text-xl lg:text-2xl">
+                            {" "}
+                            {subItem.name}
+                          </h3>
                           {subItem?.para && (
                             <p className="mt-1 text-base">{subItem?.para}</p>
                           )}
@@ -179,20 +187,20 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="w-[17%] flex justify-end items-center ">
-          <ul className="items-center justify-end hidden ml-4 lg:flex">
+          <ul className="items-center justify-end hidden ml-4 mmd:flex">
             <li>
               <Link
                 to="/auth/login"
                 rel="canonical"
                 target="_blank"
-                className="flex items-center justify-center px-3 py-2 text-base text-black bg-white rounded cursor-pointer xl:px-5"
+                className="flex items-center justify-center px-3 py-2 text-sm text-black bg-white rounded cursor-pointer lg:text-base xl:px-5"
               >
                 {" "}
                 Sign in / Sign up
               </Link>
             </li>
           </ul>
-          <ul className="flex items-center justify-end lg:hidden">
+          <ul className="flex items-center justify-end mmd:hidden">
             {mobileModal ? (
               <X
                 className="relative z-50 text-white"
@@ -210,11 +218,6 @@ const Navbar = () => {
                   {" "}
                   Sign in
                 </Link>
-                <Menu
-                  className="text-white"
-                  size={30}
-                  onClick={() => setMobileModal(true)}
-                />
               </>
             )}
           </ul>
