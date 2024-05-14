@@ -95,11 +95,13 @@ const Navbar = () => {
   ];
 
   const toggleSubmenu = (menuId) => {
-    setOpenSubmenus((prev) =>
-      prev.includes(menuId)
-        ? prev.filter((id) => id !== menuId)
-        : [...prev, menuId]
-    );
+    setOpenSubmenus((prev) => {
+      if (prev.includes(menuId)) {
+        return prev.filter((id) => id !== menuId);
+      } else {
+        return [menuId];
+      }
+    });
   };
 
   return (
