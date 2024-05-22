@@ -72,7 +72,7 @@ const Blog = () => {
             </div>
           ))}
         </div>
-        <div className="w-full mmd:w-[28%] mmd:sticky mmd:top-28 h-fit overflow-x-hidden ">
+        <div className="w-full mmd:w-[28%] mmd:sticky mmd:top-28  overflow-x-hidden ">
           <Sidebar />
         </div>
       </div>

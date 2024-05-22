@@ -16,6 +16,10 @@ import NeetCutOff from "./screens/NeetCutOff/Index";
 import DedicatedCompanion from "./screens/Home/DedicatedCompainon";
 import SignIn from "./screens/Auth/SignIn";
 import Blog from "./screens/Blog/Index";
+import Announcement from "./screens/Announcement/Index";
+import Videos from "./screens/Videos/Index";
+import Institutes from "./screens/Institute/Index";
+import AllotmentAndMapping from "./screens/AllotmentMapping/Index";
 
 function App() {
   useEffect(() => {
@@ -60,6 +64,13 @@ function App() {
           <Route path="/neet-cut-off" element={<NeetCutOff />} />
           <Route path="/auth/login" element={<SignIn />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/announcements-and-events" element={<Announcement />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/institues" element={<Institutes />} />
+          <Route
+            path="/allotment-and-mapping"
+            element={<AllotmentAndMapping />}
+          />
         </Routes>
         {!isLoginPage && <Footer />}
       </BrowserRouter>

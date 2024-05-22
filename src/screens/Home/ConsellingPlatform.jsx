@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Assets } from "../../assets/Assets";
+import { Link } from "react-router-dom";
 
 const ConsellingPlatform = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -99,12 +100,14 @@ const ConsellingPlatform = () => {
             className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
-            <img
-              src={Assets.AnnouncementEvents}
-              alt=" Announcements & Events"
-              title=" Announcements & Events"
-              className="w-full h-full rounded"
-            />
+            <Link to="/announcements-and-events">
+              <img
+                src={Assets.AnnouncementEvents}
+                alt=" Announcements & Events"
+                title=" Announcements & Events"
+                className="w-full h-full rounded"
+              />
+            </Link>
           </div>
         )}
         {activeTab === 2 && (
@@ -112,12 +115,14 @@ const ConsellingPlatform = () => {
             className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
-            <img
-              src={Assets.ClosingRanks}
-              alt=" Closing Ranks"
-              title=" Closing Ranks"
-              className="w-full h-full rounded"
-            />
+            <Link to="#">
+              <img
+                src={Assets.ClosingRanks}
+                alt=" Closing Ranks"
+                title=" Closing Ranks"
+                className="w-full h-full rounded"
+              />
+            </Link>
           </div>
         )}
         {activeTab === 3 && (
@@ -125,12 +130,14 @@ const ConsellingPlatform = () => {
             className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
-            <img
-              src={Assets.SeatMatrix}
-              alt=" Seat Matrix"
-              title=" Seat Matrix"
-              className="w-full h-full rounded"
-            />
+            <Link to="#">
+              <img
+                src={Assets.SeatMatrix}
+                alt=" Seat Matrix"
+                title=" Seat Matrix"
+                className="w-full h-full rounded"
+              />
+            </Link>
           </div>
         )}
         {activeTab === 4 && (
@@ -138,12 +145,14 @@ const ConsellingPlatform = () => {
             className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
-            <img
-              src={Assets.Allocated}
-              alt=" Allotment Mapping"
-              title=" Allotment Mapping"
-              className="w-full h-full rounded"
-            />
+            <Link to="/allotment-and-mapping">
+              <img
+                src={Assets.Allocated}
+                alt=" Allotment Mapping"
+                title=" Allotment Mapping"
+                className="w-full h-full rounded"
+              />
+            </Link>
           </div>
         )}
         {activeTab === 5 && (
@@ -151,12 +160,15 @@ const ConsellingPlatform = () => {
             className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
-            <img
-              src={Assets.Institutes}
-              alt="  Institutes"
-              title="  Institutes"
-              className="w-full h-full rounded"
-            />
+            {" "}
+            <Link to="/institues">
+              <img
+                src={Assets.Institutes}
+                alt="  Institutes"
+                title="  Institutes"
+                className="w-full h-full rounded"
+              />
+            </Link>
           </div>
         )}
         {activeTab === 6 && (
@@ -164,12 +176,14 @@ const ConsellingPlatform = () => {
             className="w-full mt-10 lg:mt-16 min-h-auto lg:min-h-[520px] xl:min-h-[600px] rounded border-2 border-secondary-sky"
             data-aos="fade-up"
           >
-            <img
-              src={Assets.VideosTab}
-              alt="Videos"
-              title="Videos"
-              className="w-full h-full rounded"
-            />
+            <Link to="/videos">
+              <img
+                src={Assets.VideosTab}
+                alt="Videos"
+                title="Videos"
+                className="w-full h-full rounded"
+              />
+            </Link>
           </div>
         )}
       </div>
