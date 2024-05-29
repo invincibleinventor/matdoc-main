@@ -192,7 +192,7 @@ const Navbar = () => {
           <ul className="items-center justify-end hidden ml-4 mmd:flex">
             <li>
               <Link
-                to="/auth/login"
+                to="https://mat-doc-user.vercel.app/"
                 rel="canonical"
                 target="_blank"
                 className="flex items-center justify-center px-3 py-2 text-sm text-black bg-white rounded cursor-pointer lg:text-base xl:px-5"
