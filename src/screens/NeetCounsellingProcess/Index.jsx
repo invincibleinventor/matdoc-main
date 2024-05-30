@@ -144,12 +144,12 @@ const NeetCounsellingProcess = () => {
     {
       id: 1,
       desc: "Candidates must attain the age of 17 years at the time of admission   to the 1st year MBBS/BDS undergraduate course or achieve the specified age by 31st December of the admission year.",
-      classes: "bg-yellow-550",
+      classes: "bg-yellow-650",
     },
     {
       id: 2,
       desc: "Aspirants eyeing admission to the BSc Nursing programme through NEET counselling registration must be aged between 17 and 35 years as of December 31 of the relevant year.",
-      classes: "bg-green-550",
+      classes: "bg-green-650",
     },
     {
       id: 3,
@@ -164,7 +164,7 @@ const NeetCounsellingProcess = () => {
     {
       id: 5,
       desc: "NEET includes three subjects such as physics, chemistry, and biology.",
-      classes: "bg-blue-550",
+      classes: "bg-blue-650",
     },
     {
       id: 6,
@@ -174,7 +174,7 @@ const NeetCounsellingProcess = () => {
     {
       id: 7,
       desc: "Candidates appearing for board exams in the academic year of NEET and those who have appeared for Class 12 exams with an improvement are also eligible.",
-      classes: "bg-green-550",
+      classes: "bg-green-650",
     },
   ];
 
@@ -246,7 +246,7 @@ const NeetCounsellingProcess = () => {
   // Neet Process
 
   const NeetProcesstitle = <>NEET Process</>;
-  const NeetProcessImg = Assets.NEETProcessWebNEETProcessWeb;
+  const NeetProcessImg = Assets.NEETProcessWeb;
   const NeetProcessImgMobile = Assets.NEETProcessMobile;
 
   return (

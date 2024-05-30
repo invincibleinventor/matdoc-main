@@ -25,7 +25,7 @@ const EducationQualification = ({
                 className="w-full sm:w-[48%] mmd:w-[31%] pt-7 md:pt-9 px-5 md:px-6 mmd:px-7 pb-7 text-white bg-[#18181B] group transition duration-300 ease-in-out shadow-cards rounded "
                 key={data.id}
               >
-                <div className="flex items-center justify-center w-10 h-10 text-white transition duration-300 ease-in-out border border-gray-500 rounded group-hover:bg-primary-brown ">
+                <div className="flex items-center justify-center w-10 h-10 text-white transition duration-300 ease-in-out border border-gray-500 rounded group-hover:bg-yellow-650 ">
                   {data.id}
                 </div>
                 {data.title && (

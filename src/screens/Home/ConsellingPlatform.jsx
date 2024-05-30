@@ -30,68 +30,68 @@ const ConsellingPlatform = () => {
         >
           <button
             className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
-              activeTab === 1 ? "text-primary-green font-bold" : "text-white"
+              activeTab === 1 ? "text-blue-650 font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(1)}
           >
             Announcements & Events
             {activeTab === 1 && (
-              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-primary-green"></div>
+              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-blue-650"></div>
             )}
           </button>
           <button
             className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
-              activeTab === 2 ? "text-primary-green font-bold" : "text-white"
+              activeTab === 2 ? "text-blue-650 font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(2)}
           >
             Closing Ranks
             {activeTab === 2 && (
-              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-primary-green"></div>
+              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-blue-650"></div>
             )}
           </button>
           <button
             className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
-              activeTab === 3 ? "text-primary-green font-bold" : "text-white"
+              activeTab === 3 ? "text-blue-650 font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(3)}
           >
             Seat Matrix
             {activeTab === 3 && (
-              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-primary-green"></div>
+              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-blue-650"></div>
             )}
           </button>
           <button
             className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
-              activeTab === 4 ? "text-primary-green font-bold" : "text-white"
+              activeTab === 4 ? "text-blue-650 font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(4)}
           >
             Allotment Mapping
             {activeTab === 4 && (
-              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-primary-green"></div>
+              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-blue-650"></div>
             )}
           </button>
           <button
             className={`mr-4 xl:mr-6 lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
-              activeTab === 5 ? "text-primary-green font-bold" : "text-white"
+              activeTab === 5 ? "text-blue-650 font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(5)}
           >
             Institutes
             {activeTab === 5 && (
-              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-primary-green"></div>
+              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-blue-650"></div>
             )}
           </button>
           <button
             className={` lg:min-w-[120px] text-xl xl:text-2xl focus:outline-none relative ${
-              activeTab === 6 ? "text-primary-green font-bold" : "text-white"
+              activeTab === 6 ? "text-blue-650 font-bold" : "text-white"
             }`}
             onClick={() => handleTabClick(6)}
           >
             Videos
             {activeTab === 6 && (
-              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-primary-green"></div>
+              <div className="absolute w-3 h-3 -translate-x-1/2 rounded-full -bottom-4 left-1/2 bg-blue-650"></div>
             )}
           </button>
         </div>

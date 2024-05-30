@@ -113,7 +113,7 @@ const Navbar = () => {
       <div className="relative z-50 flex items-center justify-between px-5 py-3 mx-auto lg:container xl:max-w-screen-xl">
         <div className="w-[60%] mmd:w-[14%] flex justify-start items-center ">
           <Menu
-            className="mr-2 text-white"
+            className="flex mr-2 text-white mmd:hidden"
             size={30}
             onClick={() => setMobileModal(true)}
           />

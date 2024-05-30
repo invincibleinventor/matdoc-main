@@ -9,7 +9,7 @@ const Banner = () => {
       link: "mailto:0nBz8@example.com",
       icon: <Mail className="mr-3 text-base text-white" size={28} />,
       desc: " Email us your queries and we'll help you out.",
-      bgColor: "bg-primary-green",
+      bgColor: "bg-blue-650",
       linkText: " hello@matdoc.com",
     },
     {
@@ -18,7 +18,7 @@ const Banner = () => {
       link: "tel:+914440116000",
       icon: <Phone className="mr-3 text-base text-white" size={28} />,
       desc: " Call us and we'll answer your queries right there!",
-      bgColor: "bg-primary-brown",
+      bgColor: "bg-green-650",
       linkText: " +91 44401 16000 ",
     },
   ];

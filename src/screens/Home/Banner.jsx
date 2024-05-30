@@ -88,11 +88,11 @@ const Banner = () => {
           className="flex items-center justify-center gap-1 mx-auto mt-10 lg:mt-20 w-fit"
           data-aos="fade-up"
         >
-          <Star fill="#008000" size={32} />
-          <Star fill="#008000" size={32} />
-          <Star fill="#008000" size={32} />
-          <Star fill="#008000" size={32} />
-          <Star fill="#008000" size={32} />
+          <Star fill="#5ca65b" size={32} />
+          <Star fill="#5ca65b" size={32} />
+          <Star fill="#5ca65b" size={32} />
+          <Star fill="#5ca65b" size={32} />
+          <Star fill="#5ca65b" size={32} />
         </div>
         <p className="mt-1 text-base text-center text-white" data-aos="fade-up">
           4.9 / 5 on Google

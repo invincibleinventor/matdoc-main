@@ -4,11 +4,11 @@ const StateQuota = ({ stateQuotaTitle, stateQuotaDesc, stateQuotaPara }) => {
     <section className="w-full py-10 bg-black lg:py-16 ">
       <div className="w-full px-5 mx-auto lg:container xl:max-w-screen-xl">
         <div
-          className="w-full p-5 border rounded sm:p-6 md:p-7 mmd:p-8 bg-primary-brown border-secondary-sky"
+          className="w-full p-5 border rounded sm:p-6 md:p-7 mmd:p-8 bg-green-650 border-secondary-sky"
           data-aos="fade-up"
         >
           {stateQuotaTitle && (
-            <h3 className="text-2xl text-black  md:text-3xl mmd:text-4xl">
+            <h3 className="text-2xl text-black md:text-3xl mmd:text-4xl">
               {stateQuotaTitle}
             </h3>
           )}

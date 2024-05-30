@@ -29,7 +29,7 @@ const DedicatedLeftBox = ({
             <p className="mt-5 text-lg text-white">{smallTitle}</p>
           )}
 
-          <div className="p-5 text-xl rounded md:text-2xl my-7 bg-primary-green md:p-7">
+          <div className="p-5 text-xl rounded md:text-2xl my-7 bg-blue-650 md:p-7">
             {description}
           </div>
           <div className="flex items-start justify-start w-full ">

@@ -30,7 +30,7 @@ const BestSeat = () => {
             data-aos="fade-right"
           >
             {" "}
-            <div className="w-full p-2 text-white bg-primary-brown border flex justify-center items-center  border-white rounded shadow-normal max-w-[88px] h-[72px]">
+            <div className="w-full p-2 text-white bg-yellow-650 border flex justify-center items-center  border-white rounded shadow-normal max-w-[88px] h-[72px]">
               <h3 className="text-2xl font-semibold md:text-3xl"> UG</h3>
             </div>
             <h2 className="mt-8 text-white ">Under Graduate</h2>
@@ -44,19 +44,19 @@ const BestSeat = () => {
             <div className="p-5 my-8 border rounded md:p-6 border-secondary-sky">
               <ul className="text-xl text-white">
                 <li className="flex items-center justify-start mt-4 first:mt-0">
-                  <span className="mr-3 md:mr-4 text-primary-green">
+                  <span className="mr-3 md:mr-4 text-blue-650">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Clarity on options
                 </li>
                 <li className="flex items-center justify-start mt-4 first:mt-0">
-                  <span className="mr-3 md:mr-4 text-primary-green">
+                  <span className="mr-3 md:mr-4 text-blue-650">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Future Proofing
                 </li>
                 <li className="flex items-center justify-start mt-4 first:mt-0">
-                  <span className="mr-3 md:mr-4 text-primary-green">
+                  <span className="mr-3 md:mr-4 text-blue-650">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Financial Confidence
@@ -69,7 +69,7 @@ const BestSeat = () => {
             className="w-full mt-10 md:mt-0 md:w-[48%] border border-secondary-sky shadow-normal rounded p-5 md:p-10"
             data-aos="fade-left"
           >
-            <div className="w-full p-2 text-white bg-primary-green border flex justify-center items-center  border-white rounded shadow-normal max-w-[88px] h-[72px]">
+            <div className="w-full p-2 text-white bg-blue-650 border flex justify-center items-center  border-white rounded shadow-normal max-w-[88px] h-[72px]">
               <h3 className="text-2xl font-semibold md:text-3xl"> PG</h3>
             </div>
             <h2 className="mt-8 text-white ">Under Graduate</h2>
@@ -83,19 +83,19 @@ const BestSeat = () => {
             <div className="p-5 my-8 border rounded md:p-6 border-secondary-sky">
               <ul className="text-xl text-white">
                 <li className="flex items-center justify-start mt-4 first:mt-0">
-                  <span className="mr-3 md:mr-4 text-primary-green">
+                  <span className="mr-3 md:mr-4 text-blue-650">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Application Changes
                 </li>
                 <li className="flex items-center justify-start mt-4 first:mt-0">
-                  <span className="mr-3 md:mr-4 text-primary-green">
+                  <span className="mr-3 md:mr-4 text-blue-650">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Tailored Flexibility
                 </li>
                 <li className="flex items-center justify-start mt-4 first:mt-0">
-                  <span className="mr-3 md:mr-4 text-primary-green">
+                  <span className="mr-3 md:mr-4 text-blue-650">
                     <CircleCheck size={28} />
                   </span>{" "}
                   Specialization Insights

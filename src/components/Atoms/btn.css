@@ -45,7 +45,7 @@
         transform: translateY(-50%) scale(50);
         transition-delay: 0s, 1s;
         opacity: 1;
-        background: #1BA098;
+        background: #5ca65b;
         color: #fff;
         z-index: -1;
       }
@@ -69,7 +69,7 @@
         transform: translateY(-50%) scale(50);
         transition-delay: 0s, 1s;
         opacity: 1;
-        background: #1BA098;
+        background: #5ca65b;
         z-index: -1;
         color: #fff;
       }

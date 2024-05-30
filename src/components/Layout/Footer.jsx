@@ -70,7 +70,10 @@ const Footer = () => {
       <section className="w-full bg-black border-t border-b border-gray-800 ">
         <div className="grid grid-cols-1 px-5 mx-auto md:grid-cols-2 mmd:grid-cols-3 xl:max-w-screen-xl lg:container">
           <div className="col-span-1 py-5 md:py-10">
-            <Link to="/" className="max-w-[150px] md:max-w-[170px] flex h-auto">
+            <Link
+              to="/"
+              className="max-w-[150px] md:max-w-[150px] flex max-h-20  h-auto"
+            >
               <img
                 src={Assets.MatDoc}
                 alt="Mat Doc"
@@ -90,7 +93,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="col-span-1 py-5 border-gray-800 md:py-10 md:px-5 mmd:px-10 md:border-l">
-            <div className="w-full p-2 text-white bg-primary-brown border flex justify-center items-center  border-white rounded shadow-normal max-w-16 md:max-w-[88px] h-16 md:h-[72px]">
+            <div className="w-full p-2 text-white bg-yellow-650 border flex justify-center items-center  border-white rounded shadow-normal max-w-16 md:max-w-[88px] h-16 md:h-[72px]">
               <h3 className="text-2xl font-semibold md:text-3xl"> UG</h3>
             </div>
             <ul className="flex items-center justify-start my-10">
@@ -119,7 +122,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-span-1 py-5 border-gray-800 md:py-10 md:pl-5 mmd:pl-10 md:border-l">
-            <div className="w-full p-2 text-white bg-primary-green border flex justify-center items-center  border-white rounded shadow-normal max-w-16 md:max-w-[88px] h-16 md:h-[72px]">
+            <div className="w-full p-2 text-white bg-blue-650 border flex justify-center items-center  border-white rounded shadow-normal max-w-16 md:max-w-[88px] h-16 md:h-[72px]">
               <h3 className="text-2xl font-semibold md:text-3xl"> PG</h3>
             </div>
             <ul className="flex items-center justify-start my-10">

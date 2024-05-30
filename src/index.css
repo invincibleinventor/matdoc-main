@@ -64,11 +64,11 @@ ul li {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1BA098;
+  background: #528ad5;
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1BA098;
+  background: #528ad5;
 }
 
 .shadow-normal{
@@ -91,7 +91,7 @@ ul li {
     margin-left: -3px;
     margin-right: -3px;
     position: absolute;
-    background: #1BA098;
+    background: #528ad5;
     transform: rotate(2deg);
     top: -1px;
     left: -1px;
@@ -99,7 +99,7 @@ ul li {
     padding: 4px 2px 2px 4px;
 }
 .highlight-blue:before {
-    background: #D48166;
+    background: #f0be43;
 }
  .HomeCards {
     background: linear-gradient(73.49deg, #0d3c6d, #001730), #001730;
