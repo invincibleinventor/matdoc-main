@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 const Banner = ({ title, description, para }) => {
   return (
-    <section className="w-full py-10 bg-black lg:py-20 ">
+    <section className="w-full text-white py-10 bg-black lg:py-20 ">
       <div
         className="w-full px-5 mx-auto lg:container xl:max-w-screen-xl"
         data-aos="zoom-in"
