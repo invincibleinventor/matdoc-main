@@ -212,7 +212,7 @@ const Navbar = () => {
             ) : (
               <>
                 <Link
-                  to="portal.matdoc.in"
+                  to="https://portal.matdoc.in"
                   rel="canonical"
                   target="_blank"
                   className="flex items-center justify-center text-nowrap px-2 md:px-3 md:text-base md:py-2 py-1.5 text-sm mr-2 text-black bg-white rounded cursor-pointer"
